@@ -8,9 +8,9 @@ Get a Station server running in under 5 minutes.
 
 ## 1. Get a Server
 
-You need a VPS with a public IP address. [Spin up a free cloud server on Hetzner](https://hetzner.cloud/?ref=q50D7EEbjbcu) to get started.
+You need a VPS with a public IP address. Choose any Linux distribution (Ubuntu or Debian recommended), the smallest tier works fine.
 
-Choose any Linux distribution (Ubuntu or Debian recommended), the smallest tier works fine.
+[Spin up a free cloud server on Hetzner to get started.](https://hetzner.cloud/?ref=q50D7EEbjbcu)
 
 ## 2. Install Station
 
