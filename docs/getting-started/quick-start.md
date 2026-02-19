@@ -22,7 +22,7 @@ You need a VPS with a public IP address running Linux (Ubuntu or Debian recommen
 
 ## 2. Install Station
 
-SSH into your server and run:
+Open a terminal on your server and run the install command below. Most cloud providers offer a web-based console you can launch directly from their dashboard — no extra setup needed. Alternatively, you can connect via [SSH](https://www.cloudflare.com/learning/access-management/what-is-ssh/) if you're comfortable with it.
 
 ```bash
 sudo curl -sSL https://qnch.network/install | bash
