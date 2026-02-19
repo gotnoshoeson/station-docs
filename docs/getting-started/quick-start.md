@@ -8,9 +8,17 @@ Get a Station server running in under 5 minutes.
 
 ## 1. Get a Server
 
-You need a VPS with a public IP address. Choose any Linux distribution (Ubuntu or Debian recommended), the smallest tier works fine.
+You need a VPS with a public IP address running Linux (Ubuntu or Debian recommended). Any provider works — here are the minimum specs:
 
-[Spin up a free cloud server on Hetzner to get started.](https://hetzner.cloud/?ref=q50D7EEbjbcu)
+| Resource | Minimum |
+|----------|---------|
+| Type | Shared (VPS) |
+| CPU | x86, 2 vCPUs |
+| RAM | 4 GB |
+| Storage | 40 GB SSD |
+| Traffic | 20 TB/mo |
+
+[Spin up a cloud server on Hetzner](https://hetzner.cloud/?ref=q50D7EEbjbcu) — this link includes free credits so you can test the waters without paying out of pocket. You can also [compare providers](https://cloudcompare.xyz/) to find one that works for you.
 
 ## 2. Install Station
 
@@ -22,8 +30,8 @@ sudo curl -sSL https://qnch.network/install | bash
 
 The interactive setup will walk you through everything. Here's what it handles:
 
-- **DuckDNS domain** — Your server needs a public domain for HTTPS. The setup registers a free [DuckDNS](https://duckdns.org) subdomain and points it at your server's IP so you don't need to buy a domain name.
-- **TLS certificates** — Automatically provisions HTTPS via Let's Encrypt using your DuckDNS domain.
+- **DNS setup** — Your server needs a public domain for HTTPS. If you have your own domain, you can point it at your server's IP. Otherwise, the setup can register a free [DuckDNS](https://duckdns.org) subdomain as a fallback.
+- **TLS certificates** — Automatically provisions HTTPS via Let's Encrypt using your domain.
 - **Reverse proxy** — Configures Traefik to route traffic and terminate TLS.
 - **Station binary** — Downloads and installs the latest Station release.
 - **Systemd service** — Registers Station as a system service so it starts on boot and restarts on failure.
