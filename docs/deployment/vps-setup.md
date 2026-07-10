@@ -44,7 +44,7 @@ ssh root@your-server-ip
 Run the install script:
 
 ```bash
-curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
+curl -sSL https://qnch.network/install.sh | sudo bash -s -- --network testnet
 ```
 
 This deploys against **testnet** — a separate network with its own DHT, used for testing. It's a great way to try Station and see if running your own server is right for you. (Mainnet isn't live yet; we'll update these docs when it launches.)

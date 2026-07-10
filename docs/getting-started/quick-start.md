@@ -33,7 +33,7 @@ Station is live on **testnet** — the perfect way to spin up a server and see i
 Run this to join testnet:
 
 ```bash
-curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
+curl -sSL https://qnch.network/install.sh | sudo bash -s -- --network testnet
 ```
 
 The interactive setup will walk you through everything. Here's what it handles:

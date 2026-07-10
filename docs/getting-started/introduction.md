@@ -33,7 +33,7 @@ Station is up and running on **testnet** — a great way to try it out and see i
 Run this on your server to join testnet:
 
 ```bash
-curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
+curl -sSL https://qnch.network/install.sh | sudo bash -s -- --network testnet
 ```
 
 That's it. The install script handles everything. See the [installation guide](../running-server/installation.md) for details.
