@@ -28,7 +28,7 @@ We've done the hard work to make setup simple. Get your Station server running i
 curl -sSL https://qnch.network/install | sudo bash
 ```
 
-That's it. The install script handles everything.
+That's it. The install script handles everything. This joins **mainnet**, the live production network. If you just want to test, you can join **testnet** instead by adding `--network testnet` — see the [installation guide](../running-server/installation.md) for details.
 
 ## What You Need
 

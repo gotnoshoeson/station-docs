@@ -47,6 +47,12 @@ Run the install script:
 curl -sSL https://qnch.network/install | sudo bash
 ```
 
+This connects to **mainnet**, the live production network (the default). To deploy against **testnet** instead — a separate network with its own DHT, used for testing — add the `--network` flag:
+
+```bash
+curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
+```
+
 The script will prompt you for your domain and set up HTTPS automatically.
 
 Done. Your server is now running.

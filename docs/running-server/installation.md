@@ -36,6 +36,12 @@ SSH into your server and run:
 curl -sSL https://qnch.network/install | sudo bash
 ```
 
+This joins **mainnet**, the live production network (the default). To join **testnet** instead — a separate network for testing that runs on its own DHT — pass the `--network` flag:
+
+```bash
+curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
+```
+
 The install script will:
 - Download and install Station
 - Set up HTTPS with your domain
