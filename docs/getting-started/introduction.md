@@ -22,13 +22,21 @@ Station is a decentralized music streaming platform that puts **you** in control
 
 ## Getting Started is Easy
 
-We've done the hard work to make setup simple. Get your Station server running in minutes:
+We've done the hard work to make setup simple. Get your Station server running in minutes.
+
+:::tip Testnet is live
+
+Station is up and running on **testnet** — a great way to try it out and see if running your own server is right for you. Everything works just like it will on mainnet, on a separate network built for testing. (Mainnet launches soon — we'll update this page the moment it does.)
+
+:::
+
+Run this on your server to join testnet:
 
 ```bash
-curl -sSL https://qnch.network/install | sudo bash
+curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
 ```
 
-That's it. The install script handles everything. This joins **mainnet**, the live production network. If you just want to test, you can join **testnet** instead by adding `--network testnet` — see the [installation guide](../running-server/installation.md) for details.
+That's it. The install script handles everything. See the [installation guide](../running-server/installation.md) for details.
 
 ## What You Need
 

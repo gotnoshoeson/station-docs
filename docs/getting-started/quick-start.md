@@ -24,13 +24,13 @@ You need a VPS with a public IP address running Linux (Ubuntu or Debian recommen
 
 Open a terminal on your server and run the install command below. Most cloud providers offer a web-based console you can launch directly from their dashboard — no extra setup needed. Alternatively, you can connect via [SSH](https://www.cloudflare.com/learning/access-management/what-is-ssh/) if you're comfortable with it.
 
-Most users should join **mainnet**, the live production network — this is the default, so no extra flags are needed:
+:::tip Testnet is live
 
-```bash
-curl -sSL https://qnch.network/install | sudo bash
-```
+Station is live on **testnet** — the perfect way to spin up a server and see if running your own Station is right for you. It runs on its own separate DHT built for testing. (Mainnet launches soon — we'll update this page the moment it does.)
 
-If you're testing, join **testnet** instead. It runs on its own separate DHT, so mainnet and testnet servers don't discover each other:
+:::
+
+Run this to join testnet:
 
 ```bash
 curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet

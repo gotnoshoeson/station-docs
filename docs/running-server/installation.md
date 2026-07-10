@@ -33,14 +33,10 @@ Give DNS a few minutes to propagate (usually 5-15 minutes).
 SSH into your server and run:
 
 ```bash
-curl -sSL https://qnch.network/install | sudo bash
-```
-
-This joins **mainnet**, the live production network (the default). To join **testnet** instead — a separate network for testing that runs on its own DHT — pass the `--network` flag:
-
-```bash
 curl -sSL https://qnch.network/install | sudo bash -s -- --network testnet
 ```
+
+This joins **testnet** — a separate network for testing that runs on its own DHT. It's a great way to try Station and see if running your own server is right for you. (Mainnet isn't live yet; we'll update these docs when it launches.)
 
 The install script will:
 - Download and install Station
