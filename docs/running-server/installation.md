@@ -33,7 +33,7 @@ Give DNS a few minutes to propagate (usually 5-15 minutes).
 SSH into your server and run:
 
 ```bash
-curl -sSL https://qnch.network/install.sh | sudo bash -s -- --network testnet
+curl -sSL https://qnch.network/install.sh -o install.sh && sudo bash install.sh --network testnet
 ```
 
 This joins **testnet** — a separate network for testing that runs on its own DHT. It's a great way to try Station and see if running your own server is right for you. (Mainnet isn't live yet; we'll update these docs when it launches.)
