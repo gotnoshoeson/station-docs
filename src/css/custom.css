@@ -1,30 +1,66 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global styles. Bundles Infima (Docusaurus's CSS framework).
+ * Brand color: Station mint (#ADEBB3, "mint.500" in the artist dashboard &
+ * listener app). Mint is a light pastel, so it's used as a FILL with dark
+ * text — not as text itself. In light mode that means link/interactive text
+ * uses a darker mint (readable on white); in dark mode the brand mint reads
+ * great directly. All values checked to pass WCAG AA contrast.
  */
 
-/* You can override the default Infima variables here. */
+/* ---- Light mode ---------------------------------------------------------- */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary = darker mint, same hue as #ADEBB3, ~4.8:1 on white (AA) */
+  --ifm-color-primary: #2c8232;
+  --ifm-color-primary-dark: #27732c;
+  --ifm-color-primary-darker: #236728;
+  --ifm-color-primary-darkest: #1b501f;
+  --ifm-color-primary-light: #329539;
+  --ifm-color-primary-lighter: #38a43f;
+  --ifm-color-primary-lightest: #41bf4a;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Brand mint accent — always paired with dark "ink" text (~12.9:1) */
+  --brand-mint: #adebb3;
+  --brand-mint-hover: #9de7a4;
+  --brand-mint-ink: #111827;
+
+  /* Mint-tinted surfaces */
+  --ifm-menu-color-background-active: rgba(173, 235, 179, 0.35);
+  --docusaurus-highlighted-code-line-bg: rgba(173, 235, 179, 0.4);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ---- Dark mode ----------------------------------------------------------- */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Dark mode uses the brand mint directly — high contrast on dark bg */
+  --ifm-color-primary: #adebb3;
+  --ifm-color-primary-dark: #9de7a4;
+  --ifm-color-primary-darker: #90e498;
+  --ifm-color-primary-darkest: #78de82;
+  --ifm-color-primary-light: #c1f0c6;
+  --ifm-color-primary-lighter: #d2f4d5;
+  --ifm-color-primary-lightest: #effbf0;
+
+  --ifm-menu-color-background-active: rgba(173, 235, 179, 0.14);
+  --docusaurus-highlighted-code-line-bg: rgba(173, 235, 179, 0.16);
+}
+
+/* ---- Brand mint fills ---------------------------------------------------- */
+/* Primary buttons: mint fill + dark ink in both modes, matching the apps. */
+.button--primary {
+  --ifm-button-background-color: var(--brand-mint);
+  --ifm-button-border-color: var(--brand-mint);
+  --ifm-button-color: var(--brand-mint-ink);
+  --ifm-button-hover-background-color: var(--brand-mint-hover);
+}
+.button--primary:hover {
+  background-color: var(--brand-mint-hover);
+  border-color: var(--brand-mint-hover);
+  color: var(--brand-mint-ink);
+}
+
+/* ---- Footer -------------------------------------------------------------- */
+/* Neutral dark grey — replaces Infima's default blue-slate (#303846) so the
+   footer reads as a clean contrast band under the page body in both modes. */
+.footer--dark {
+  --ifm-footer-background-color: #2e2e2e;
 }

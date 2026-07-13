@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://docs.station.fm',
+  url: 'https://docs.qnch.network',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -85,7 +85,11 @@ const config: Config = {
             },
             {
               label: 'Deployment',
-              to: '/deployment/vps-setup',
+              to: '/deployment/install',
+            },
+            {
+              label: 'Features',
+              to: '/features/dashboard',
             },
           ],
         },
@@ -98,7 +102,7 @@ const config: Config = {
             },
             {
               label: 'Main Site',
-              href: 'https://station.fm',
+              href: 'https://qnch.network',
             },
           ],
         },
