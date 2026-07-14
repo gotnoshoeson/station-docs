@@ -6,6 +6,8 @@ sidebar_position: 5
 
 Your Fan Club turns listeners into supporters. Fans join by minting a **FanPin** — a membership pass they pay a fee for — and in return you can give them early or exclusive access to your music. It runs on an on-chain **FanSociety** contract that you deploy once; mint fees split between you and a small protocol fee and collect in the contract until you withdraw.
 
+Your Fan Club is powered by the [FanSociety](https://www.fansociety.xyz/) protocol.
+
 > 📷 **Screenshot needed:** the Fan Club page.
 
 FanPins are organized into **generations** — think of each generation as a numbered edition with its own artwork, description, and fee. When you set [Catalog](./catalog.md) access, you grant it to specific generations, so the fans holding those FanPins can stream that music.
