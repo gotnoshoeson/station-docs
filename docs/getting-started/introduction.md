@@ -9,11 +9,7 @@ Run your own decentralized music server and share your music directly with liste
 
 ## What is Station?
 
-Station isn't a streaming platform. There's no company in the middle holding your music, your audience, or your money — you run your own server, and it talks directly to your listeners over a peer-to-peer network.
-
-That makes Station **uncentralized**. Not *de*centralized — decentralizing is something you do to a system that had a center to begin with, and Station never had one. There's no central service being broken up or worked around here. It's peer-to-peer from the first line of code: your server, your listeners, and a protocol connecting them.
-
-**No middlemen. No platform risk. Just you and your fans.**
+A minimally extractive, self-hosted, digital music distribution service.
 
 ## Why Station?
 

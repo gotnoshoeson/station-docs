@@ -14,8 +14,6 @@ This is why Station exists.
 
 Minimal extraction here isn't a value we hold or a promise we're asking you to take on faith. It's a **cryptographic law**. The share Station takes is written into the contracts you deploy and own — not a policy in a document we can revise, not a number in a database we control. It's math, and it's yours.
 
-That doesn't mean taking nothing. Station needs some revenue to exist and keep improving. It means taking the least it possibly can, and making that enforceable instead of aspirational: no subscriptions anywhere in the ecosystem, no outside investors, and nothing underneath us demanding the number go up.
-
 In the beginning, the split is **0% | 100%** — nothing to Station, everything to you. Early adopters lock that rate in for good. Artists who arrive later get whatever the split is on the day they deploy, and keep that. [Revenue Split](./revenue-split.md) covers how it's enforced.
 
 Everything below is what that buys you — plus the three things you need before any of it works: a **wallet**, the **network** it talks to, and some **tokens** to pay for transactions.
@@ -32,9 +30,9 @@ The same way running your own server means nobody can deplatform your music, run
 
 ## Very low transaction costs
 
-Station runs on Polkadot's **Asset Hub**, which is built for cheap, fast settlement. A transaction — a fan minting a FanPin, a sale, a withdrawal — typically costs a fraction of a cent in network fees.
+Station runs on Polkadot's **Asset Hub**, which is built for cheap, fast settlement. A transaction — a fan minting a FanPin, a sale, a withdrawal — typically costs a fraction of a cent in network fees. It's a flat fee, so it doesn't scale with your success: selling a $20 record costs about the same to settle as a $2 one.
 
-That's the part worth sitting with. The traditional path takes a percentage of everything, forever: streaming platforms keep a large share of every play, and card processors take a cut plus a fixed fee on every transaction. A flat network fee measured in fractions of a cent doesn't scale with your success — selling a $20 record costs about the same to settle as selling a $2 one.
+The bigger difference is how little there is to understand. Streaming payouts arrive through a genuinely complicated financial model — revenue pools, per-stream rates that move month to month, distributors, labels, several kinds of royalty — with enough moving parts that working out what you earned, or why, becomes a job of its own. Station isn't a cheaper version of that model. It doesn't have one. A fan pays, your contract splits the payment, you withdraw, and every step is readable on a block explorer.
 
 ## Secured by a global network
 
