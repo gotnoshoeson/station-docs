@@ -13,10 +13,9 @@ A minimally extractive, self-hosted, digital music distribution service.
 
 ## Why Station?
 
-- **You own it** — Your server, your music, your rules
-- **Can't be shut down** — There's no company that could deplatform you or rewrite the terms
-- **Direct connection** — Get paid directly by your supporters
-- **Always available** — As long as your server runs, your music is accessible
+- **Self host your music** to maximize revenue
+- **Crowdfund** with the [FanSociety](https://www.fansociety.xyz/) protocol
+- **Give special access** to your patrons
 
 :::tip Testnet is live
 
