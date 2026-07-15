@@ -88,6 +88,10 @@ const config: Config = {
               to: '/deployment/install',
             },
             {
+              label: 'Blockchain Network',
+              to: '/blockchain-network/overview',
+            },
+            {
               label: 'Features',
               to: '/features/dashboard',
             },
@@ -96,6 +100,10 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
+            {
+              label: 'Telegram',
+              href: 'https://t.me/+EwzB7vuSRZozYTEx',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/station/station',

@@ -9,14 +9,16 @@ Run your own decentralized music server and share your music directly with liste
 
 ## What is Station?
 
-Station is a decentralized music streaming platform that puts **you** in control. Instead of uploading to a central platform, you run your own server and stream music directly to listeners through a peer-to-peer network.
+Station isn't a streaming platform. There's no company in the middle holding your music, your audience, or your money — you run your own server, and it talks directly to your listeners over a peer-to-peer network.
+
+That makes Station **uncentralized**. Not *de*centralized — decentralizing is something you do to a system that had a center to begin with, and Station never had one. There's no central service being broken up or worked around here. It's peer-to-peer from the first line of code: your server, your listeners, and a protocol connecting them.
 
 **No middlemen. No platform risk. Just you and your fans.**
 
 ## Why Station?
 
 - **You own it** — Your server, your music, your rules
-- **Can't be shut down** — No company can deplatform you or change the terms
+- **Can't be shut down** — There's no company that could deplatform you or rewrite the terms
 - **Direct connection** — Get paid directly by your supporters
 - **Always available** — As long as your server runs, your music is accessible
 
@@ -36,8 +38,13 @@ Getting a Station server running takes three steps:
 
 The whole thing takes about 10 minutes.
 
+## Getting paid
+
+Streaming your music needs nothing but your server. When you're ready to **earn** from it — a Fan Club, a Storefront, a Treasury — that side runs on a blockchain, so it needs a crypto wallet. [Blockchain Network](../blockchain-network/overview.md) walks through it from scratch, and right now it's all on a free test network, so you can practice without spending anything.
+
 ## Ready?
 
 - [What You Need](./what-you-need.md) — prepare your server and domain
 - [Install Station](../deployment/install.md) — the step-by-step walkthrough
+- [Blockchain Network](../blockchain-network/overview.md) — set up a wallet so you can get paid
 - [Listener app](https://beta.qnch.network) — where fans discover your music

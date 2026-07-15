@@ -32,6 +32,16 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Blockchain Network',
+      items: [
+        'blockchain-network/overview',
+        'blockchain-network/wallet',
+        'blockchain-network/test-tokens',
+        'blockchain-network/revenue-split',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Features',
       items: [
         'features/dashboard',

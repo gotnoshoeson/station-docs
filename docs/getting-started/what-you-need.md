@@ -68,6 +68,12 @@ How much space your music needs:
 
 **Example:** 50 FLAC tracks ≈ 2–3 GB.
 
+## A wallet (only if you want to get paid)
+
+Not required to install Station or stream your music — but your [Fan Club](../features/fan-club.md), [Storefront](../features/storefront.md), and [Treasury](../features/treasury.md) run on a blockchain, so they need a **browser wallet** like MetaMask.
+
+You can set this up now or later; nothing about it depends on your server. On the current test network the tokens are free, so it costs nothing to try. See [Blockchain Network](../blockchain-network/overview.md).
+
 ## Next step
 
 Got your server and domain ready? → [Install Station](../deployment/install.md)

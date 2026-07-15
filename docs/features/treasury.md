@@ -15,7 +15,9 @@ When you deploy your Fan Club or Storefront, you choose where their revenue is p
 :::
 
 :::note Wallet required
-The Treasury is on-chain, so it needs a connected browser wallet. Connect one from the wallet status bar at the top of the page.
+The Treasury is on-chain, so it needs a connected browser wallet holding enough PAS to cover the deploy cost and gas. Connect one from the wallet status bar at the top of the page.
+
+New to wallets? Start with [Blockchain Network](../blockchain-network/overview.md) — it covers setting one up and getting free test tokens.
 :::
 
 ## 1. Deploy your Treasury
@@ -24,6 +26,12 @@ The Treasury is on-chain, so it needs a connected browser wallet. Connect one fr
 2. **Deploy Treasury.** This is an on-chain transaction with a small deploy cost (in the chain's native token) plus gas.
 
 Your connected wallet becomes the treasury's **owner** — the account that can withdraw. You can transfer ownership to a multisig later without changing the treasury address. Once deployed, the page shows the treasury's contract address and its owner.
+
+:::danger Your wallet's recovery phrase is the only key to this money
+The owner account is the **only** account that can ever withdraw from your treasury. If you lose your wallet's recovery phrase, the funds stay locked in the contract forever — Station can't recover them, and neither can anyone else.
+
+Make sure your recovery phrase is written down and stored safely before you route real revenue here. See [Set Up Your Wallet](../blockchain-network/wallet.md#2-back-up-your-recovery-phrase).
+:::
 
 ## 2. Route your revenue to it
 

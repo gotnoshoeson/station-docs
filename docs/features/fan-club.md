@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Fan Club
 
-Your Fan Club turns listeners into supporters. Fans join by minting a **FanPin** — a membership pass they pay a fee for — and in return you can give them early or exclusive access to your music. It runs on an on-chain **FanSociety** contract that you deploy once; mint fees split between you and a small protocol fee and collect in the contract until you withdraw.
+Your Fan Club turns listeners into supporters. Fans join by minting a **FanPin** — a membership pass they pay a fee for — and in return you can give them early or exclusive access to your music. It runs on an on-chain **FanSociety** contract that you deploy once; mint fees are split between you and Station — **0% | 100%** in this first round, meaning you keep all of it — and collect in the contract until you withdraw. See [Revenue Split](../blockchain-network/revenue-split.md).
 
 Your Fan Club is powered by the [FanSociety](https://www.fansociety.xyz/) protocol.
 
@@ -13,7 +13,9 @@ Your Fan Club is powered by the [FanSociety](https://www.fansociety.xyz/) protoc
 FanPins are organized into **generations** — think of each generation as a numbered edition with its own artwork, description, and fee. When you set [Catalog](./catalog.md) access, you grant it to specific generations, so the fans holding those FanPins can stream that music.
 
 :::note Wallet required
-The Fan Club is on-chain, so it needs a connected browser wallet. Connect one from the wallet status bar at the top of the page.
+The Fan Club is on-chain, so it needs a connected browser wallet holding enough PAS to cover the deploy cost and gas. Connect one from the wallet status bar at the top of the page.
+
+New to wallets? Start with [Blockchain Network](../blockchain-network/overview.md) — it covers setting one up and getting free test tokens.
 :::
 
 ## 1. Deploy your Fan Club
