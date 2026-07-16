@@ -8,19 +8,11 @@ Station takes a share of what you earn. In the beginning, that share is **0% | 1
 
 This page covers why taking as little as possible is the goal, the mechanism that makes it real, and what we can and can't tell you about where it goes from here.
 
-## Minimally extractive — and why we can say it
+## Minimally extractive
 
 The goal is to be **minimally extractive**: to take the smallest share that lets Station keep existing and improving, and no more.
 
-Every platform makes a version of this claim. Two things make ours different from a slogan.
-
-**Station only earns when you earn.** There are no subscriptions anywhere in the ecosystem. You don't pay to run a server on Station, and your fans don't pay a monthly fee to listen. The split is the whole business model. If you don't make money, neither do we — there's no floor of recurring revenue underneath us that's indifferent to how you're doing.
-
-**There are no outside investors.** This is the structural part, and it's the reason the rest is credible. Platforms rarely start extractive; they become extractive. The mechanism is almost always the same — outside capital arrives with an expectation of maximized returns, and that pressure has to land somewhere. It lands on the people making the thing worth using. Station has taken no outside money, so that pressure doesn't exist here, and the rate doesn't have to answer to anyone's growth targets.
-
-What we genuinely don't know is the number. It's unclear how much revenue Station will need to keep growing without outside investment. No subscriptions and no investors means there's no template to copy — every question about how this sustains itself has to be worked out from first principles. We'd rather tell you that honestly than invent a roadmap we can't keep.
-
-What we can commit to is the direction, and the fact that whatever we work out, it won't be applied retroactively to you. The rest of this page is how that's enforced.
+It's unclear how much revenue Station will need to keep growing without outside investment. What we can commit to is the direction, and the fact that whatever we work out, it won't be applied retroactively to you. The rest of this page is how that's enforced.
 
 ## The payment splitter
 

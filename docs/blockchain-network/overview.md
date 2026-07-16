@@ -28,11 +28,11 @@ The same way running your own server means nobody can deplatform your music, run
 - **No percentage cut.** Station's split starts at **0% | 100%** — you keep everything — and it's locked into your contract the day you deploy, so it can't be raised on you later. See [Revenue Split](./revenue-split.md).
 - **Open by default.** Every transaction is publicly verifiable on a block explorer — including the ones paying you.
 
-## Very low transaction costs
+## Transaction costs
 
 Station runs on Polkadot's **Asset Hub**, which is built for cheap, fast settlement. A transaction — a fan minting a FanPin, a sale, a withdrawal — typically costs a fraction of a cent in network fees. It's a flat fee, so it doesn't scale with your success: selling a $20 record costs about the same to settle as a $2 one.
 
-The bigger difference is how little there is to understand. Streaming payouts arrive through a genuinely complicated financial model — revenue pools, per-stream rates that move month to month, distributors, labels, several kinds of royalty — with enough moving parts that working out what you earned, or why, becomes a job of its own. Station isn't a cheaper version of that model. It doesn't have one. A fan pays, your contract splits the payment, you withdraw, and every step is readable on a block explorer.
+Streaming payouts are also complex and arrive through a genuinely complicated financial model — revenue pools, per-stream rates that move month to month, distributors, labels, several kinds of royalty — with enough moving parts that working out what you earned, or why, becomes a job of its own. Station isn't a cheaper version of that model. It's a simpler and more sovereign model. A fan pays, your contract splits the payment, you withdraw, and every step is readable on a block explorer.
 
 ## Secured by a global network
 
