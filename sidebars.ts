@@ -32,6 +32,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Network',
+      items: [
+        'network/overview',
+        'network/listener-app',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Blockchain Network',
       items: [
         'blockchain-network/overview',

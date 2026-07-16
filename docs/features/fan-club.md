@@ -4,13 +4,13 @@ sidebar_position: 5
 
 # Fan Club
 
-Your Fan Club turns listeners into supporters. Fans join by minting a **FanPin** — a membership pass they pay a fee for — and in return you can give them early or exclusive access to your music. It runs on an on-chain **FanSociety** contract that you deploy once; mint fees are split between you and Station — **0% | 100%** in this first round, meaning you keep all of it — and collect in the contract until you withdraw. See [Revenue Split](../blockchain-network/revenue-split.md).
+Your Fan Club is a patronage service that works directly with your streaming service; neither of which is a subscription.
 
 Your Fan Club is powered by the [FanSociety](https://www.fansociety.xyz/) protocol.
 
 > 📷 **Screenshot needed:** the Fan Club page.
 
-FanPins are organized into **generations** — think of each generation as a numbered edition with its own artwork, description, and fee. When you set [Catalog](./catalog.md) access, you grant it to specific generations, so the fans holding those FanPins can stream that music.
+FanPins are organized into **generations** — this is a way to catalog your supporters throughout your career. The alternatives have already been tried without much success. Past fan clubs have used a rarity model, in which an artist would create say 10,000 membership slots; which basically means whoever has the most money gets to be in the club, lame. This is a model that can grow with an artist throughout their career and is able to highlight early supporters. Fans love to claim being an early follower or supporter of bands; and when they blow up, there's a sort of dissatisfaction. FanSociety was designed to create stronger connections in this social contract that exists between fans and artists. 
 
 :::note Wallet required
 The Fan Club is on-chain, so it needs a connected browser wallet holding enough PAS to cover the deploy cost and gas. Connect one from the wallet status bar at the top of the page.
@@ -30,15 +30,15 @@ Once deployed, your Fan Club shows a **Deployed** badge and its contract address
 
 ## 2. Create a FanPin generation
 
-Each generation is a new edition of your membership pass. In the **Create FanPin** form, set:
+Each generation has no limit and only is only available to mint until you create a new generation. In the **Create FanPin** form, set:
 
-- **Token Fee** — what fans pay to mint this generation's pin (in the native token)
+- **Token Fee** — minimum donation amount (in the native token)
 - **FanPin Image** — the pin artwork (up to 10 MB)
-- **Description** — what this generation is about
+- **Description** — what this generation is about, put whatever info you want here, or don't
 
 Choose **Create FanPin** to publish it on-chain. It becomes your **active** generation — the one new fans mint — and the **Active FanPin** panel shows its artwork, generation number, and fee.
 
-Create a new generation whenever you want a fresh edition — a new drop, tier, or season. Older generations stay valid for the fans who already hold them.
+Create a new generation whenever you want. When you create a new generation, the previous generation is no longer available. This means, over time, your supporters can be identified in cohorts of fans. Station currently provides one way of using this data; giving privileged access to your music to supporters at your discretion. But we're pretty sure you can come up with some great ideas to give back to your community too, and we're working on this too.
 
 ## 3. See your supporters
 
@@ -53,7 +53,7 @@ Your combined finances across the Fan Club and [Storefront](./storefront.md) liv
 
 ## Connect FanPins to your music
 
-Minting a FanPin is only half the story — you decide what it unlocks. On the [Catalog](./catalog.md) page, grant album or track access to specific generations so their holders can stream it, on whatever schedule you set.
+Minting a FanPin is only half the story — you decide what it unlocks. On the [Catalog](./catalog.md) page you have a lot of options to customize what works for you. Some examples include, early release schedule for one or multiple genertions of supporters, bonus tracks that only FanPin holders can stream. Our goal was to give you the tools to do what works for you rather than dictate a feature.
 
 ## Related
 
