@@ -18,7 +18,7 @@ It's unclear how much revenue Station will need to keep growing without outside 
 
 Every [Fan Club](../features/fan-club.md) and [Storefront](../features/storefront.md) contract you deploy has a **payment splitter** built into it. When a fan mints a FanPin or buys a track, their payment lands in your contract and is divided on the spot: your share, and Station's share, according to the split written into that specific contract. Your share accumulates there until you withdraw it.
 
-There's no invoice, no billing cycle, and no moment where Station holds your money and passes some of it back. The division happens at payment time, inside a contract you own, on a public ledger anyone can read. This is how Station earns a portion of the value the network creates — and it's the *only* way Station earns anything.
+There's no invoice, no billing cycle, and no moment where Station holds your money and passes some of it back. The division happens at payment time, inside a contract you own, on a public ledger anyone can read. This is how Station earns a portion of the value the network creates. Staion implements the [OpenZeppelin PaymentSplitter](https://docs.openzeppelin.com/contracts/4.x/api/finance#PaymentSplitter)
 
 ## Your rate is locked when you deploy
 
