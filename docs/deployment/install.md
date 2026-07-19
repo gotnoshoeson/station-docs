@@ -91,7 +91,7 @@ When it's done, you'll see **Setup completed successfully** along with a **setup
 Open your domain with `/setup` on the end:
 
 ```text
-https://your-domain.com/setup
+https://music.yourdomain.com/setup
 ```
 
 Enter the **PIN** from the installer to create your login. This is your artist **dashboard** — where you upload music, build your storefront, and manage everything.
