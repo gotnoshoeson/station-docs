@@ -1,7 +1,28 @@
 # VHS Recording Plan — Station Installer
 
 > Working spec for the `vhs-recorder` agent. Not published (lives at repo root, alongside `DOCS-OUTLINE.md`).
-> Last updated: 2026-07-13.
+> Last updated: 2026-10-26.
+
+## Current setup (2026-10-26): recordings come from the real terminal app
+
+Since v0.1.0-rc.17 the install command opens the **station-installer terminal app** (Go, Bubble Tea + Huh, `station/cmd/station-installer`); the classic gum wizard only runs with `--classic` or as a fallback. The install page's clips are recorded from the **real app** in demo mode, not from a mock:
+
+- `vhs/tui-install.sh` is symlinked as `install.sh` in each tape, so the real command on camera (`sudo bash install.sh --network testnet`) runs `station-installer --demo --preview=false --script vhs/tui-demo-setup.sh`. `--demo` uses placeholder facts (IP `203.0.113.42`, no real DNS or Docker checks).
+- `vhs/tui-demo-setup.sh` stands in for `setup-station.sh` after the questions: it prints the real script's progress messages and `::stage::` / `::result::` markers with placeholder values, and touches nothing. **Its strings are copied from `station/scripts/setup-station.sh`: re-diff them when that script's messages change.**
+- Before recording, build the app onto PATH: `cd ~/code/station && go build -o ~/go/bin/station-installer -ldflags "-X main.version=<tag>" ./cmd/station-installer`. The version shows in the title line.
+- Render from the repo root: `vhs vhs/install-<name>.tape`.
+
+| Tape | Output | Shows | Page anchor |
+|---|---|---|---|
+| `install-full.tape` | `full.webm` (+ `full.gif`) | whole run: splash, questions, install, PIN card | top-of-page hero (video) |
+| `install-splash.tape` | `splash.gif` | the command, the animated title while checks run, the first question | Step 2 intro |
+| `install-duckdns.tape` | `duckdns.gif` | DuckDNS: subdomain, hidden token | "How will listeners reach your server?" |
+| `install-entry-node.tape` | `entry-node.gif` | `DEMO_FLAGS=--simulate-bootnode-down`: typo refused, good address accepted | "Joining the network" |
+| `install-finish.tape` | `finish.gif` | review, install checklist + log, the "Your Station is live" card with the PIN | Step 3 |
+
+Shared settings differ from the section below: **FontSize 16, 1200×900, Framerate 30**. The app keeps its large STATION title only on terminals of 28 rows or more (smaller ones get a one-line header), so the old 22 px / 700 px size is too short. Placeholder values are unchanged (`music.yourdomain.com`, `you@example.com`, PIN `123-456`).
+
+`vhs/mock-install.sh` now only models the **classic** wizard (`--classic`); no clip uses it. The sections below are the original plan for that wizard (2026-07), kept for history.
 
 ## Goal
 
