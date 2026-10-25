@@ -43,6 +43,10 @@ Command: `curl -sSL https://qnch.network/install.sh -o install.sh && sudo bash i
    - **DuckDNS:** prints setup steps → `Have you created a DuckDNS account and subdomain?` [no] → `Enter your DuckDNS subdomain:` → `Enter your DuckDNS token:` → `DuckDNS updated successfully`.
 5. **Email** — "Let's Encrypt will send certificate expiration notices to this email." → `Enter email address:`.
 6. **Watchtower** — `Enable automatic updates via Watchtower?` [default **Yes**].
+6b. **Joining the network** *(added 2026-10-25 from the real script, rc.15)* — `→ Joining the network` → spinner `Fetching Station...`.
+   - **Bootnode reachable (normal):** `✓ Station's bootnode is reachable.` Nothing is asked.
+   - **Bootnode not reachable:** "Station's original bootnode cannot be reached, but you can still join the network." → explanation (copy a Node address from another artist's dashboard, Settings) → `Node address:` (placeholder `/dns4/artist.example.com/tcp/443/wss/p2p/12D3KooW...`, Enter = none). A typo prints `✗ That doesn't look like a node address. It should look like: ...` and asks again. A good address prints `✓ Your node will join the network through: <address>`.
+   - **Re-run with a saved entry node:** `ℹ Your saved entry node is: <address>` → `Keep this entry node?` [default **Yes**]. No opens the same `Node address:` prompt.
 7. **No more prompts** — `Generating configuration files…` → `Created traefik/traefik.yml` / `dynamic.yml` → `Starting Station and Traefik…` (image pull) → cert provision (30–90s) → health wait → `Retrieving setup PIN from Station…` → `✓ PIN retrieved successfully`.
 8. **Success box** — green `✓ Setup completed successfully!` then a **NEXT STEPS** box:
    1. `Open:  https://<domain>/setup`
@@ -77,6 +81,8 @@ mock-install.sh --stage docker              # Docker prompt only
 mock-install.sh --stage domain-own          # own-domain prompt chain
 mock-install.sh --stage domain-duckdns      # DuckDNS prompt chain
 mock-install.sh --stage email-watchtower    # email + Watchtower prompts
+mock-install.sh --stage join                # joining the network, bootnode reachable (in --all)
+mock-install.sh --stage entry-node          # bootnode unreachable: Node address prompt, typo refused, good address
 mock-install.sh --stage provisioning        # config gen + compose up (trimmed)
 mock-install.sh --stage success             # PIN + success/NEXT STEPS box
 mock-install.sh --all                       # full happy path (own domain) — for the hero
@@ -95,6 +101,7 @@ All tapes live in `vhs/`; outputs go to `static/img/install/` (served at `/img/i
 | 3 | `install-domain-own.tape` | `domain-own` | domain choice → Own domain → detect IP → enter domain → ✓ DNS resolves | `install/domain-own.gif` | Step 3 (domain) | ~8s |
 | 4 | `install-domain-duckdns.tape` | `domain-duckdns` | domain choice → DuckDNS → confirm → subdomain → token (redacted) → ✓ updated | `install/domain-duckdns.gif` | Step 3 (DuckDNS variant) | ~8s |
 | 5 | `install-email-watchtower.tape` | `email-watchtower` | enter email → Enable Watchtower? → Yes | `install/email-watchtower.gif` | Step 3 (final prompts) | ~5s |
+| 5b | `install-entry-node.tape` *(not recorded yet)* | `entry-node` | "bootnode cannot be reached" → Node address typo refused → good address accepted | `install/entry-node.gif` | Step 2, "Joining the network" | ~10s |
 | 6 | `install-provisioning.tape` | `provisioning` | generating configs → starting containers → cert (trimmed via Hide) | `install/provisioning.gif` | Step 4 (it works) | ~6s |
 | 7 | `install-success-pin.tape` | `success` | retrieving PIN → ✓ Setup completed + NEXT STEPS box + PIN `123-456` | `install/success-pin.gif` | Step 4/5 (money shot) | ~6s |
 | H | `install-full.tape` | `--all` | end-to-end happy path (own domain), long waits trimmed | `install/full.gif` | top-of-page hero | ~30–40s |

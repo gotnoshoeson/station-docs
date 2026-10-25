@@ -22,6 +22,20 @@ Artists can share a link to their content:
 https://beta.qnch.network/artist/your-namespace
 ```
 
+## Connecting through another node
+
+The app finds artists by connecting to a Station node. It starts with Station's own node, but any artist's node works, and the app remembers the nodes it has used.
+
+If you'd like to connect through a particular artist's node (for example, if Station's node is down), ask them for their **Node address**. It's in their dashboard under Settings. Then:
+
+1. Click the connection status in the top bar (**Network** in the menu on a phone).
+2. Under **Peer Address**, paste the address. It looks like `/dns4/artist.example.com/tcp/443/wss/p2p/12D3KooW...`.
+3. Click **Add node**.
+
+The app connects to the address and keeps it only if that works. Saved nodes are remembered in your browser, and one that stops answering is dropped.
+
+When you open an artist, the app asks more than one node and checks every answer itself. If two nodes name different owners for the same artist name, it shows you both and lets you choose. Your choice is remembered, so you're only asked once.
+
 ## Bye bye algorithms
 
 There's no recommendation engine, no directory, and no browse page. These are not road mapped features, they're intentionally left out.

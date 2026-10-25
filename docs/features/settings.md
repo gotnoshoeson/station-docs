@@ -33,6 +33,7 @@ A read-only view of your server's health on the network, refreshed automatically
 - **Network status** — connected, or still connecting to peers
 - **Peer ID** — your node's unique network identity (copyable)
 - **Domain** — the address your node is served at
+- **Node address** — your node's full address, with a copy button. Share it so others can join the network through your node: a new artist can paste it into the Station install wizard, and a listener can add it in the [listener app](../network/listener-app.md#connecting-through-another-node). It looks like `/dns4/your-domain/tcp/443/wss/p2p/12D3KooW...`. If your node only has an address for one of the two, you'll see two labelled rows instead, or a short note explaining what's missing.
 - **Connected Peers**, **DHT status**, and **routing table size**
 
 Handy for confirming your server is online and discoverable.

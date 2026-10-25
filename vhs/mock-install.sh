@@ -12,7 +12,7 @@
 #   domain demo.qnch.network · IP 203.0.113.42 · email you@example.com · PIN 123-456
 #
 # Usage:
-#   mock-install.sh --stage <run|docker|domain-own|email-watchtower|provisioning|success>
+#   mock-install.sh --stage <run|docker|domain-own|email-watchtower|join|entry-node|provisioning|success>
 #   mock-install.sh --all        # full happy path (own domain) — for the hero clip
 #
 set -u
@@ -137,6 +137,33 @@ stage_email_watchtower() {
     fi
 }
 
+# Joining the network, normal case: the built-in bootnode answers, nothing is asked.
+stage_join() {
+    print_step "Joining the network"
+    echo ""
+    gum spin --spinner dot --title "Fetching Station..." -- sleep 1
+    print_success "Station's bootnode is reachable."
+}
+
+# Joining the network when the bootnode cannot be reached (spec section 8):
+# the wizard asks for another artist's Node address. A typo is refused with
+# the example shown again; the demo address is a placeholder, never a real node.
+stage_entry_node() {
+    local example="/dns4/artist.example.com/tcp/443/wss/p2p/12D3KooW..."
+    local demo_addr="/dns4/friend.example.com/tcp/443/wss/p2p/12D3KooW..."
+    print_step "Joining the network"
+    echo ""
+    gum spin --spinner dot --title "Fetching Station..." -- sleep 1
+    echo "Station's original bootnode cannot be reached, but you can still join the network."
+    echo "Your node can join through any other Station node instead. Ask an artist who runs one to open their dashboard, go to Settings, and copy their Node address."
+    echo "Paste it here, or press Enter to continue without one and add it later."
+    echo ""
+    gum_input "Node address:" "$example" >/dev/null
+    print_error "That doesn't look like a node address. It should look like: $example"
+    gum_input "Node address:" "$example" >/dev/null
+    print_success "Your node will join the network through: $demo_addr"
+}
+
 stage_provisioning() {
     print_step "Generating configuration files..."
     sleep 0.4; print_success "Created docker-compose.yml"
@@ -170,6 +197,7 @@ run_all() {
     stage_docker;           echo
     stage_domain_own;       echo
     stage_email_watchtower; echo
+    stage_join;             echo
     stage_provisioning;     echo
     stage_success
 }
@@ -196,9 +224,11 @@ case "${1:-}" in
             domain-own)       stage_domain_own ;;
             domain-duckdns)   stage_domain_duckdns ;;
             email-watchtower) stage_email_watchtower ;;
+            join)             stage_join ;;
+            entry-node)       stage_entry_node ;;
             provisioning)     stage_provisioning ;;
             success)          stage_success ;;
             *) echo "unknown stage: ${2:-}" >&2; exit 1 ;;
         esac ;;
-    *) echo "usage: $0 --stage <run|docker|domain-own|domain-duckdns|email-watchtower|provisioning|success> | --all | --network <net>" >&2; exit 1 ;;
+    *) echo "usage: $0 --stage <run|docker|domain-own|domain-duckdns|email-watchtower|join|entry-node|provisioning|success> | --all | --network <net>" >&2; exit 1 ;;
 esac

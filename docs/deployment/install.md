@@ -72,6 +72,22 @@ Choose whether to enable **Watchtower** (**default: yes**), which keeps your Sta
 
 ![Entering an email for HTTPS notices, then choosing to enable automatic updates via Watchtower](/img/install/email-watchtower.gif)
 
+### Joining the network
+
+Your node joins the network through a **bootnode**, a node it can reach first. The wizard checks that Station's bootnode is reachable. Usually it is, you'll see **Station's bootnode is reachable.**, and nothing is asked.
+
+If the bootnode can't be reached, you can still join. Any other Station node will do. Ask an artist who runs one to open their dashboard, go to **Settings**, and copy their **Node address** (see [Settings](../features/settings.md#node-information)). It looks like this:
+
+```text
+/dns4/artist.example.com/tcp/443/wss/p2p/12D3KooW...
+```
+
+Paste it at the **Node address** prompt. The wizard checks it, and if it doesn't look right (a missing character, a stray space) it shows the example again so you can try once more. Your node then joins through that address.
+
+You can also press **Enter** to continue without one. Your node still starts, but it isn't on the network yet. It joins on its own when the bootnode is back, or you can add a node address later by running the installer again.
+
+**Running the installer again?** If you saved a node address before, the wizard shows it and asks **Keep this entry node?** (default: yes). Answer no to paste a different one, or press Enter at the prompt to go without.
+
 ## 3. Let it finish
 
 After the last question, the wizard does the rest on its own — no more input needed:
@@ -129,6 +145,11 @@ Share your **namespace** so fans can find you on the [listener app](https://beta
 
 - Give the installer a minute to finish and the certificate to issue.
 - Confirm the containers are running: `docker compose -f docker-compose.yml ps`
+
+**The installer says Station's bootnode cannot be reached**
+
+- You can still finish the install. Paste a **Node address** from another artist's dashboard (Settings) when the wizard asks, or press Enter and add one later by running the installer again. See [Joining the network](#joining-the-network).
+- If the address you paste is refused, copy it again in full: it starts with `/dns4/` and ends with a long ID beginning `12D3KooW`.
 
 **The installer says a port is already in use**
 
