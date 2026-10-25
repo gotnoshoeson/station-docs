@@ -86,7 +86,7 @@ Paste it at the **Node address** prompt. The wizard checks it, and if it doesn't
 
 You can also press **Enter** to continue without one. Your node still starts, but it isn't on the network yet. It joins on its own when the bootnode is back, or you can add a node address later by running the installer again.
 
-**Running the installer again?** If you saved a node address before, the wizard shows it and asks **Keep this entry node?** (default: yes). Answer no to paste a different one, or press Enter at the prompt to go without.
+**Running the installer again?** If you saved a node address before, the wizard shows it and asks **Keep this entry node?** (default: yes). Answer no to paste a different one, or press Enter at the prompt to use Station's built-in bootnode instead.
 
 ## 3. Let it finish
 
