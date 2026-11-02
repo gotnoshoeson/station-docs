@@ -44,11 +44,17 @@ The chain your [Fan Club](./fan-club.md), [Storefront](./storefront.md), and [Tr
 
 Switching chains restarts your node to apply the change.
 
-## Blockchain RPC Endpoints
+## Local Indexer
 
-*Advanced.* This is where your node reads on-chain activity (fan club mints, shop purchases). Your node keeps an **ordered list** of RPC endpoints — built-in public ones plus any you add — and uses the highest-priority working one, falling back down the list if one fails.
+*Advanced.* Station's indexer runs on your server and watches your Fan Club and Storefront contracts, recording sales and fan access. It reads the chain through an **ordered list** of endpoints and uses the first one that works, falling back down the list if one fails. If you run [ETH-RPC](#eth-rpc) on your server, it is first in the list as **Your local eth-rpc**; public endpoints follow.
 
 You can reorder, enable or disable, **test**, and add or remove your own endpoints. Changes apply live, with no restart. Most artists never need to touch this — the built-in endpoints work out of the box.
+
+## ETH-RPC
+
+*Advanced.* Shown only on Polkadot Hub, Kusama Hub and Paseo. ETH-RPC is a service on your server that keeps its own database of the chain's transactions; the Local Indexer reads from it. ETH-RPC in turn reads blocks from an **ordered list** of Substrate RPC nodes run by public providers, and uses the first one that works.
+
+A status box shows which node ETH-RPC is reading from. If a node stops answering, ETH-RPC moves to the next one on its own. Changing the first node in the list restarts ETH-RPC (about 30 seconds; it resumes where it left off), and it won't switch again within 5 minutes unless you press **Check now**.
 
 ## Software Updates
 

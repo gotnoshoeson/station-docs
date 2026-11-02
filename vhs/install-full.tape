@@ -39,9 +39,6 @@ Type "you@example.com"
 Sleep 500ms
 Enter
 Sleep 1.5s
-# indexer: yes
-Enter
-Sleep 2.5s
 # review: install
 Enter
 # install screen (~14 s), then the card with the PIN

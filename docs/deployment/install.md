@@ -68,10 +68,6 @@ Only when something is already using ports 80 or 443. Station needs both for HTT
 
 Optional. Let's Encrypt writes here only if your certificate's automatic renewal fails.
 
-### Your own blockchain indexer
-
-Station can run its own indexer, so the record of your sales lives on your own server instead of depending on someone else's (**default: yes**). It uses about 45 MB of memory and reads from free public providers — no account or API key. Skip it and your node uses public indexers. This question only appears on x86 servers.
-
 ### Joining the network
 
 Your node joins the network through a **bootnode**, a node it can reach first. The installer checks that Station's bootnode is reachable. Usually it is, and nothing is asked.
@@ -99,7 +95,7 @@ Last, the installer shows your answers. Choose **Yes** to install, or **Go back*
 After the review, the installer does the rest on its own — no more input needed. A checklist on the left follows each stage, and the work itself scrolls by on the right:
 
 - Checks the server and your domain
-- Writes your configuration and starts the containers (your Station node, a Traefik reverse proxy for HTTPS, and Watchtower for updates)
+- Writes your configuration and starts the containers (your Station node, a Traefik reverse proxy for HTTPS, Watchtower for updates, and [ETH-RPC](../features/settings.md#eth-rpc), which stays idle until you pick a chain that uses it)
 - Gets a free HTTPS certificate from Let's Encrypt (this can take 30–90 seconds)
 - Waits for your node to come online
 

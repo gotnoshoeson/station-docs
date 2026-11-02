@@ -34,8 +34,6 @@ Type "music.yourdomain.com"
 Enter
 Sleep 800ms
 Enter
-Sleep 800ms
-Enter
 Sleep 1.5s
 Type "/dns4/friend.example.com/tcp/443/wss/p2p/12D3KooWfriend"
 Sleep 500ms

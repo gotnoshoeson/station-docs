@@ -31,8 +31,6 @@ Enter
 Sleep 800ms
 Type "you@example.com"
 Enter
-Sleep 800ms
-Enter
 Sleep 1.5s
 Show
 Sleep 2s
