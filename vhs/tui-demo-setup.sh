@@ -28,14 +28,18 @@ step "→ Domain Configuration"
 step "✓ Server IP: 203.0.113.42"
 step "ℹ Checking DNS resolution for ${DOMAIN}..."
 step "✓ DNS correctly configured: ${DOMAIN} → 203.0.113.42" 0.6
+step "✓ ETH-RPC will be set up; Station uses it on chains that need it"
 step "→ Joining the network"
 step "✓ Station's bootnode is reachable." 0.6
 
 echo "::stage::config"
 step "→ Setting up directories..."
 step "✓ Created directory structure"
-step "→ Generating configuration files..."
+step "→ Generating docker-compose.yml..."
+step "✓ Added Watchtower service to docker-compose.yml"
+step "✓ Added eth-rpc service to docker-compose.yml"
 step "✓ Created docker-compose.yml"
+step "→ Generating configuration files..."
 step "✓ Created .env"
 step "✓ Created traefik/traefik.yml"
 step "✓ Created traefik/dynamic.yml"
@@ -46,6 +50,7 @@ step " ✔ Network station-network      Created" 0.6
 step " ✔ Container station-traefik    Started" 0.5
 step " ✔ Container station-node       Started" 0.5
 step " ✔ Container station-watchtower Started" 0.4
+step " ✔ Container station-eth-rpc    Started" 0.4
 step "ℹ Waiting for Traefik to be ready..."
 
 echo "::stage::certificate"
