@@ -54,6 +54,8 @@ Let listeners **rent** streaming access to your albums for a limited time before
 - **Revenue** — view your Storefront earnings on the page and **withdraw** your balance to your payee.
 - **Export income statement (CSV)** — download your sales and rental income for your records. (It's an income statement, not a tax document.)
 
+Revenue figures belong to the wallet you're connected with. If that wallet isn't the contract's payee, the panel says **This wallet isn't the payee for this shop** and shows the payee's address. Connect that wallet to see and withdraw your revenue.
+
 Your full finances — balances across Storefront and Fan Club, withdrawals, and revenue splits — live in [Treasury](./treasury.md).
 
 ## Related

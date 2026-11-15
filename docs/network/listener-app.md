@@ -67,6 +67,8 @@ Nothing gets in the way of listening to music you've made public. A wallet only 
 | Streaming free, public tracks | Streaming gated music |
 | Following and saving | Downloading |
 
+If a fan's wallet is on a different network, the **Wallet** menu offers to fix it. It shows **Add** *network* **to wallet** (or **Switch to** *network*), with the network's name filled in. One click asks the wallet to do it. If the wallet can't add the network on its own, the app shows the details to add it by hand.
+
 ## Fan-only access
 
 When you [gate music to a FanPin generation](../features/fan-club.md), your node checks which generations the fan's wallet holds and serves the audio only if their FanPin opens that door.

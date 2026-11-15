@@ -49,6 +49,8 @@ Create a new generation whenever you want. When you create a new generation, the
 - **Revenue** — view your membership earnings and **withdraw** your balance to your payee.
 - **Export income statement (CSV)** — download your Fan Club income for your records. (It's an income statement, not a tax document.)
 
+Revenue figures belong to the wallet you're connected with. If that wallet isn't the contract's payee, the panel says **This wallet isn't the payee for this fan club** and shows the payee's address. Connect that wallet to see and withdraw your revenue.
+
 Your combined finances across the Fan Club and [Storefront](./storefront.md) live in [Treasury](./treasury.md).
 
 ## Connect FanPins to your music

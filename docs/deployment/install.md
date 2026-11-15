@@ -55,7 +55,9 @@ Only when Docker isn't on the server yet. Station runs as a set of Docker contai
 
 ### Ports in use
 
-Only when something is already using ports 80 or 443. Station needs both for HTTPS. If it's an earlier Station install, it's safe to continue.
+Only when another program is already using port 80 or 443. Station needs both for HTTPS. Stop that program, then choose **Continue**. If it's still running, the installer warns you, because Station can't start until the ports are free. **Cancel** ends the install so you can deal with it first.
+
+If the ports are held by an earlier Station install, you won't see this question. The installer carries on by itself.
 
 ### How will listeners reach your server?
 
@@ -160,6 +162,7 @@ Share your **namespace** so fans can find you on the [listener app](https://beta
 
 **The installer says a port is already in use**
 
-- Something else is using port 80 or 443. Stop it and re-run the installer. If it's an earlier Station install, answer **Stop them** and the installer carries on.
+- Another program is using port 80 or 443. Stop that program, then choose **Continue**, or choose **Cancel** and run the installer again once it's stopped. See [Ports in use](#ports-in-use).
+- If the ports are held by an earlier Station install, the installer doesn't ask. It carries on by itself.
 
-**Still stuck?** Open an issue on [GitHub](https://github.com/station/station/issues).
+**Still stuck?** Ask in the [Station Telegram group](https://t.me/+EwzB7vuSRZozYTEx), or open an issue on [GitHub](https://github.com/gotnoshoeson/station-docs/issues).

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Get Test Tokens
 
-Every on-chain action costs a small network fee, paid in the network's own token. On Paseo Asset Hub that token is **PAS**, and it's free.
+Every on-chain action costs a small network fee, paid in the network's own token. On Polkadot Hub TestNet that token is **PAS**, and it's free.
 
 You need PAS before you can deploy your [Fan Club](../features/fan-club.md), [Storefront](../features/storefront.md), or [Treasury](../features/treasury.md). A wallet with a zero balance can connect to Station, but it can't sign anything.
 
@@ -22,11 +22,11 @@ Your tokens arrive in a few seconds. Polkadot's own walkthrough is here if you w
 
 ## Check that it worked
 
-Open MetaMask with **Paseo Asset Hub** selected as the network and you should see a PAS balance.
+Open MetaMask with **Polkadot Testnet** selected as the network and you should see a PAS balance. (That's the name your wallet gives Polkadot Hub TestNet.)
 
 If it's still zero:
 
-- **Check the network.** A balance only shows on the network it's on. Make sure MetaMask is on Paseo Asset Hub (chain ID `420420417`), not Ethereum Mainnet.
+- **Check the network.** A balance only shows on the network it's on. Make sure MetaMask is on Polkadot Testnet (chain ID `420420417`), not Ethereum Mainnet.
 - **Check the address.** Confirm the address you pasted matches the one in your wallet — and that it's the account you plan to deploy with.
 - **Look it up directly.** Paste your address into [Blockscout](https://blockscout-testnet.polkadot.io) to see what the chain actually thinks your balance is.
 - **Give it a minute**, then try the faucet again. Faucets rate-limit repeat requests, so if you've asked recently you may need to wait before it'll dispense again.

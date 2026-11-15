@@ -41,7 +41,7 @@ The security here isn't a promise from a company — it's cryptography and a dec
 The tradeoff is that this security is **yours to maintain**. There's no password reset. Your keys are the account, which is why [Set Up Your Wallet](./wallet.md) spends most of its time on backing them up properly.
 
 :::tip Right now, this is a testing environment
-Station is live on **Paseo Asset Hub**, Polkadot's test network. The PAS tokens you'll use are **free from a faucet and worth nothing** — they exist so you can deploy contracts, take fake payments, and make mistakes without losing anything real.
+Station is live on **Polkadot Hub TestNet**, Polkadot's test network (also called Paseo). The PAS tokens you'll use are **free from a faucet and worth nothing** — they exist so you can deploy contracts, take fake payments, and make mistakes without losing anything real.
 
 **Mainnet hasn't launched yet.** When it does, the same flow will move real currency with real value, and a lost key will mean lost money. This is the moment to get comfortable — practice here, where there's nothing to lose. We'll update these docs the moment mainnet is live.
 :::

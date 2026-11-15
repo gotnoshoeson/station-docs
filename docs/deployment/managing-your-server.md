@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Managing Your Server
 
-Station runs as a set of Docker containers managed by Docker Compose — your Station node, a Traefik reverse proxy for HTTPS, and (optionally) Watchtower for automatic updates. There's no separate `station` system service to manage.
+Station runs as a set of Docker containers managed by Docker Compose — your Station node, a Traefik reverse proxy for HTTPS, Watchtower for updates, and ETH-RPC. There's no separate `station` system service to manage.
 
 Run all the commands below from the directory where you ran the installer — the one containing `docker-compose.yml`.
 
@@ -27,11 +27,12 @@ docker compose -f docker-compose.yml up -d
 
 ## Logs for a single service
 
-The containers are `station` (your node), `traefik` (HTTPS), and — if you enabled it — `watchtower` (updates):
+The containers are `station` (your node), `traefik` (HTTPS), `watchtower` (updates), and `eth-rpc`. ETH-RPC keeps a copy of the chain's transactions for your node. It stays idle until you pick a chain that uses it.
 
 ```bash
 docker compose -f docker-compose.yml logs -f station
 docker compose -f docker-compose.yml logs -f traefik
+docker compose -f docker-compose.yml logs -f eth-rpc
 ```
 
 ## Get a new setup PIN
@@ -47,7 +48,9 @@ Then enter it at `https://your-domain.com/setup`.
 
 ## Updates
 
-If you enabled **Watchtower** during install, your Station node updates itself automatically — it checks for new versions every few hours and only touches the Station container. You can also manage updates from the dashboard.
+Station checks for a new version every 6 hours. By default it only tells you: the news appears in **Settings → Software Updates** in your dashboard, and nothing changes on your server until you act.
+
+If you'd rather your node update itself, choose **Auto-update** in [Settings → Software Updates](../features/settings.md#software-updates). Station then asks **Watchtower** to update its containers when a new version is out. Watchtower is always installed, but it never updates anything on its own. It waits for Station to ask, and it leaves Traefik alone.
 
 To update manually at any time, pull the latest images and recreate the containers:
 
@@ -72,4 +75,4 @@ Look at the Traefik logs: `docker compose -f docker-compose.yml logs traefik`. M
 
 **Need help?**
 
-Open an issue on [GitHub](https://github.com/station/station/issues).
+Ask in the [Station Telegram group](https://t.me/+EwzB7vuSRZozYTEx), or open an issue on [GitHub](https://github.com/gotnoshoeson/station-docs/issues).
