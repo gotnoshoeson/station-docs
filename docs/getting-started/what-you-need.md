@@ -12,12 +12,22 @@ You need a Linux server with a public IP address. The installer supports **Ubunt
 
 | Resource | Minimum | Recommended |
 |----------|---------|-------------|
-| CPU | 1 vCPU (x86) | 2 vCPUs |
-| RAM | 1 GB | 4 GB |
-| Storage | 10 GB + space for your music | 40 GB SSD |
+| CPU | 4 vCPUs (x86_64) | 4+ vCPUs |
+| RAM | 4 GB | 8 GB |
+| Storage | 40 GB SSD + space for your music | 80 GB SSD |
 | Network | Stable connection | 20 TB/mo traffic |
 
-1 GB of RAM is enough to get started. 4 GB gives you comfortable headroom as your catalog and listenership grow.
+**These went up in September 2026, and it's worth saying why.** Station keeps its own local index
+of your sales and fan club activity, built from the blockchain as it happens. That index is yours —
+it lives on your server, and it keeps working even if the service feeding it goes away or you decide
+to switch to a different one. Holding that index, and the adapter that fills it, takes roughly a
+gigabyte of memory and a core of its own on top of everything else Station does.
+
+We would rather the default be the one that leaves you holding your own records. So the minimum now
+describes a server that can do that comfortably, rather than the smallest one that will boot.
+
+**x86_64 only.** ARM servers are often the cheapest tier at any provider, and some of the software
+this depends on isn't published for ARM yet. Check the architecture before you buy.
 
 ### Where to get a server
 
@@ -30,7 +40,10 @@ Any VPS provider works. A few affordable options:
 | **Contabo** | ~$6/mo | More resources for the money |
 | **Hetzner** | ~$7/mo | Reliable and well-documented; free trial credits |
 
-Prices are **starting points** and change with region, plan, and availability — the cheapest plans can sell out, so the real cost may be higher. Pick any plan that meets the minimums above.
+The prices above are each provider's **entry plan**, which is smaller than the minimums in the table
+— expect to pick a larger tier than the headline figure. Prices also move with region and
+availability, and the cheapest plans sell out. Pick any plan that meets the minimums above, on
+x86_64.
 
 [Spin up a server on Hetzner](https://hetzner.cloud/?ref=q50D7EEbjbcu) — this referral link includes free credits so you can try it without paying out of pocket. Or [compare providers](https://cloudcompare.xyz/) to find one that fits.
 
