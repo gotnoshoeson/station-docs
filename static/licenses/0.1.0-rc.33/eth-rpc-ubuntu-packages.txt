@@ -1,0 +1,515 @@
+UBUNTU PACKAGES IN THE BASE IMAGE
+
+The Station eth-rpc image is built on Parity's image parity/eth-rpc:v1.25.0, which is
+built on Ubuntu 22.04 (jammy). The packages below are the Ubuntu packages in
+it, unmodified, each under its own license. Each Ubuntu package's own
+license and copyright notice is in the image at
+/usr/share/doc/<package>/copyright.
+
+The list is read from the dpkg database of every layer of the image, so it
+includes packages whose programs were deleted from the final filesystem by a
+later layer but are still stored in the earlier layers of the image. Those are
+marked 'not in final dpkg database'.
+
+Source for each package, at the version shown, is published by Ubuntu:
+  - Launchpad: https://launchpad.net/ubuntu/+source/<source package>/<version>
+    (the link given for each package, with the source files under 'Source files')
+  - Archive:   https://archive.ubuntu.com/ubuntu/pool/ and
+    https://old-releases.ubuntu.com/ubuntu/pool/
+  - Or run, on an Ubuntu 22.04 system with deb-src enabled:
+    apt-get source <source package>=<version>
+
+Packages: 123
+
+adduser 3.118ubuntu5
+  License: see /usr/share/doc/adduser/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/adduser/3.118ubuntu5
+
+apt 2.4.13
+  License: GPLv2+
+  Source:  https://launchpad.net/ubuntu/+source/apt/2.4.13
+
+base-files 12ubuntu4.7
+  License: see /usr/share/doc/base-files/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/base-files/12ubuntu4.7
+
+base-passwd 3.5.52build1
+  License: GPL-2, public-domain
+  Source:  https://launchpad.net/ubuntu/+source/base-passwd/3.5.52build1
+
+bash 5.1-6ubuntu1.1
+  License: see /usr/share/doc/bash/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/bash/5.1-6ubuntu1.1
+
+bsdutils 1:2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+ca-certificates 20240203~22.04.1
+  License: GPL-2+, MPL-2.0
+  Source:  https://launchpad.net/ubuntu/+source/ca-certificates/20240203~22.04.1
+
+coreutils 8.32-4.1ubuntu1.2
+  License: see /usr/share/doc/coreutils/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/coreutils/8.32-4.1ubuntu1.2
+
+dash 0.5.11+git20210903+057cd650a4ed-3build1
+  License: BSD-3-Clause, FSFULLR, FSFUL, BSD-3-clause, Expat, GPL-2+ or BSD-3-clause, public-domain, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/dash/0.5.11+git20210903+057cd650a4ed-3build1
+
+debconf 1.5.79ubuntu1
+  License: BSD-2-clause
+  Source:  https://launchpad.net/ubuntu/+source/debconf/1.5.79ubuntu1
+
+debianutils 5.5-1ubuntu2
+  License: see /usr/share/doc/debianutils/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/debianutils/5.5-1ubuntu2
+
+diffutils 1:3.8-0ubuntu2
+  License: see /usr/share/doc/diffutils/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/diffutils/1:3.8-0ubuntu2
+
+dirmngr 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+dpkg 1.21.1ubuntu2.3
+  License: GPL-2+, GPL-2, BSD-2-clause, public-domain-s-s-d, public-domain-md5
+  Source:  https://launchpad.net/ubuntu/+source/dpkg/1.21.1ubuntu2.3
+
+e2fsprogs 1.46.5-2ubuntu1.2
+  License: see /usr/share/doc/e2fsprogs/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/e2fsprogs/1.46.5-2ubuntu1.2
+
+findutils 4.8.0-1ubuntu3
+  License: see /usr/share/doc/findutils/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/findutils/4.8.0-1ubuntu3
+
+gcc-12-base 12.3.0-1ubuntu1~22.04
+  License: see /usr/share/doc/gcc-12-base/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/gcc-12/12.3.0-1ubuntu1~22.04
+
+gnupg 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gnupg-l10n 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gnupg-utils 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpg 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpg-agent 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpg-wks-client 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpg-wks-server 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpgconf 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpgsm 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+gpgv 2.2.27-3ubuntu2.1
+  License: GPL-3+, permissive, LGPL-2.1+, Expat, GPL-3+ or BSD-3-clause, LGPL-3+, RFC-Reference, TinySCHEME, CC0-1.0, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/gnupg2/2.2.27-3ubuntu2.1
+
+grep 3.7-1build1
+  License: GPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/grep/3.7-1build1
+
+gzip 1.10-4ubuntu4.1
+  License: GPL-3+, GFDL-1.3+-no-invariant, FSF-manpages
+  Source:  https://launchpad.net/ubuntu/+source/gzip/1.10-4ubuntu4.1
+
+hostname 3.23ubuntu2
+  License: see /usr/share/doc/hostname/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/hostname/3.23ubuntu2
+
+init-system-helpers 1.62
+  License: BSD-3-clause, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/init-system-helpers/1.62
+
+libacl1 2.3.1-1
+  License: GPL-2+, LGPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/acl/2.3.1-1
+
+libapt-pkg6.0 2.4.13
+  License: GPLv2+
+  Source:  https://launchpad.net/ubuntu/+source/apt/2.4.13
+
+libassuan0 2.5.5-1build1
+  License: LGPL-2.1+, GAP~FSF, LGPL-3+, GPL-2+ with libtool exception, GPL-3+, GAP, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/libassuan/2.5.5-1build1
+
+libattr1 1:2.5.1-1build1
+  License: GPL-2+, LGPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/attr/1:2.5.1-1build1
+
+libaudit-common 1:3.0.7-1build1
+  License: GPL-2, LGPL-2.1
+  Source:  https://launchpad.net/ubuntu/+source/audit/1:3.0.7-1build1
+
+libaudit1 1:3.0.7-1build1
+  License: GPL-2, LGPL-2.1
+  Source:  https://launchpad.net/ubuntu/+source/audit/1:3.0.7-1build1
+
+libblkid1 2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+libbz2-1.0 1.0.8-5build1
+  License: BSD-variant, GPL-2
+  Source:  https://launchpad.net/ubuntu/+source/bzip2/1.0.8-5build1
+
+libc-bin 2.35-0ubuntu3.8
+  License: see /usr/share/doc/libc-bin/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/glibc/2.35-0ubuntu3.8
+
+libc6 2.35-0ubuntu3.8
+  License: see /usr/share/doc/libc6/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/glibc/2.35-0ubuntu3.8
+
+libcap-ng0 0.7.9-2.2build3
+  License: see /usr/share/doc/libcap-ng0/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libcap-ng/0.7.9-2.2build3
+
+libcap2 1:2.44-1ubuntu0.22.04.1
+  License: BSD-3-clause or GPL-2, BSD-3-clause or GPL-2+, BSD-3-clause, GPL-2, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/libcap2/1:2.44-1ubuntu0.22.04.1
+
+libcom-err2 1.46.5-2ubuntu1.2
+  License: see /usr/share/doc/libcom-err2/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/e2fsprogs/1.46.5-2ubuntu1.2
+
+libcrypt1 1:4.4.27-1
+  License: see /usr/share/doc/libcrypt1/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libxcrypt/1:4.4.27-1
+
+libdb5.3 5.3.28+dfsg1-0.8ubuntu3
+  License: see /usr/share/doc/libdb5.3/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/db5.3/5.3.28+dfsg1-0.8ubuntu3
+
+libdebconfclient0 0.261ubuntu1
+  License: see /usr/share/doc/libdebconfclient0/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/cdebconf/0.261ubuntu1
+
+libext2fs2 1.46.5-2ubuntu1.2
+  License: see /usr/share/doc/libext2fs2/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/e2fsprogs/1.46.5-2ubuntu1.2
+
+libffi8 3.4.2-4
+  License: see /usr/share/doc/libffi8/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libffi/3.4.2-4
+
+libgcc-s1 12.3.0-1ubuntu1~22.04
+  License: not recorded in the image
+  Source:  https://launchpad.net/ubuntu/+source/gcc-12/12.3.0-1ubuntu1~22.04
+
+libgcrypt20 1.9.4-3ubuntu3
+  License: see /usr/share/doc/libgcrypt20/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libgcrypt20/1.9.4-3ubuntu3
+
+libgmp10 2:6.2.1+dfsg-3ubuntu1
+  License: see /usr/share/doc/libgmp10/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/gmp/2:6.2.1+dfsg-3ubuntu1
+
+libgnutls30 3.7.3-4ubuntu1.5
+  License: The main library is licensed under GNU Lesser, CC0 license, Expat, Apache-2.0, LGPLv3+_or_GPLv2+, LGPLv2.1+, GPLv3+, BSD-3-Clause
+  Source:  https://launchpad.net/ubuntu/+source/gnutls28/3.7.3-4ubuntu1.5
+
+libgpg-error0 1.43-3
+  License: LGPL-2.1+, LGPL-2.1+ or BSD-3-clause, g10-permissive, GPL-3+, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/libgpg-error/1.43-3
+
+libgssapi-krb5-2 1.19.2-2ubuntu0.4
+  License: see /usr/share/doc/libgssapi-krb5-2/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/krb5/1.19.2-2ubuntu0.4
+
+libhogweed6 3.7.3-1build2
+  License: LGPL-3+ or GPL-2+, LGPL-2+, Expat, GPL-3+, GPL-2+, GPL-3+ with Autoconf exception, public-domain, GPL-2, GAP, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/nettle/3.7.3-1build2
+
+libidn2-0 2.3.2-2build1
+  License: GPL-3+, LGPL-3+ or GPL-2+, Unicode, GPL-2+, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/libidn2/2.3.2-2build1
+
+libk5crypto3 1.19.2-2ubuntu0.4
+  License: see /usr/share/doc/libk5crypto3/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/krb5/1.19.2-2ubuntu0.4
+
+libkeyutils1 1.6.1-2ubuntu3
+  License: GPL-2+, LGPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/keyutils/1.6.1-2ubuntu3
+
+libkrb5-3 1.19.2-2ubuntu0.4
+  License: see /usr/share/doc/libkrb5-3/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/krb5/1.19.2-2ubuntu0.4
+
+libkrb5support0 1.19.2-2ubuntu0.4
+  License: see /usr/share/doc/libkrb5support0/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/krb5/1.19.2-2ubuntu0.4
+
+libksba8 1.6.0-2ubuntu0.2
+  License: FSFUL, LGPL-2.1-or-later
+  Source:  https://launchpad.net/ubuntu/+source/libksba/1.6.0-2ubuntu0.2
+
+libldap-2.5-0 2.5.18+dfsg-0ubuntu0.22.04.2
+  License: see /usr/share/doc/libldap-2.5-0/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/openldap/2.5.18+dfsg-0ubuntu0.22.04.2
+
+liblz4-1 1.9.3-2build2
+  License: BSD-2-clause, GPL-2+, GPL-2
+  Source:  https://launchpad.net/ubuntu/+source/lz4/1.9.3-2build2
+
+liblzma5 5.2.5-2ubuntu1
+  License: PD, probably-PD, GPL-2+, LGPL-2.1+, permissive-fsf, Autoconf, permissive-nowarranty, GPL-2, none, config-h, noderivs, PD-debian
+  Source:  https://launchpad.net/ubuntu/+source/xz-utils/5.2.5-2ubuntu1
+
+libmount1 2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+libncurses6 6.3-2ubuntu0.1
+  License: not recorded in the image
+  Source:  https://launchpad.net/ubuntu/+source/ncurses/6.3-2ubuntu0.1
+
+libncursesw6 6.3-2ubuntu0.1
+  License: not recorded in the image
+  Source:  https://launchpad.net/ubuntu/+source/ncurses/6.3-2ubuntu0.1
+
+libnettle8 3.7.3-1build2
+  License: LGPL-3+ or GPL-2+, LGPL-2+, Expat, GPL-3+, GPL-2+, GPL-3+ with Autoconf exception, public-domain, GPL-2, GAP, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/nettle/3.7.3-1build2
+
+libnpth0 1.6-3build2
+  License: LGPL-2.1+
+  Source:  https://launchpad.net/ubuntu/+source/npth/1.6-3build2
+
+libnsl2 1.3.0-2build2
+  License: LGPL-2.1+, LGPL-2.1, BSD-3-clause, permissive-fsf, permissive-makefile-in, permissive-autoconf-m4-no-warranty, GPL-3+-autoconf-exception, permissive-configure, GPL-2+-autoconf-exception, MIT, GPL-2+-libtool-exception, permissive-autoconf-m4
+  Source:  https://launchpad.net/ubuntu/+source/libnsl/1.3.0-2build2
+
+libp11-kit0 0.24.0-6build1
+  License: BSD-3-Clause, permissive-like-automake-output, ISC, ISC+IBM, LGPL-2.1+, Apache-2.0, same-as-rest-of-p11kit
+  Source:  https://launchpad.net/ubuntu/+source/p11-kit/0.24.0-6build1
+
+libpam-modules 1.4.0-11ubuntu2.4
+  License: see /usr/share/doc/libpam-modules/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/pam/1.4.0-11ubuntu2.4
+
+libpam-modules-bin 1.4.0-11ubuntu2.4
+  License: see /usr/share/doc/libpam-modules-bin/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/pam/1.4.0-11ubuntu2.4
+
+libpam-runtime 1.4.0-11ubuntu2.4
+  License: see /usr/share/doc/libpam-runtime/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/pam/1.4.0-11ubuntu2.4
+
+libpam0g 1.4.0-11ubuntu2.4
+  License: see /usr/share/doc/libpam0g/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/pam/1.4.0-11ubuntu2.4
+
+libpcre2-8-0 10.39-3ubuntu0.1
+  License: see /usr/share/doc/libpcre2-8-0/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/pcre2/10.39-3ubuntu0.1
+
+libpcre3 2:8.39-13ubuntu0.22.04.1
+  License: see /usr/share/doc/libpcre3/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/pcre3/2:8.39-13ubuntu0.22.04.1
+
+libprocps8 2:3.3.17-6ubuntu2.1
+  License: LGPL-2.1+, LGPL-2.0+, GPL-2.0+
+  Source:  https://launchpad.net/ubuntu/+source/procps/2:3.3.17-6ubuntu2.1
+
+libreadline8 8.1.2-1
+  License: see /usr/share/doc/libreadline8/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/readline/8.1.2-1
+
+libsasl2-2 2.1.27+dfsg2-3ubuntu1.2
+  License: BSD-4-clause, OpenSSL and SSLeay, BSD-3-clause, GPL-3+, BSD-2-clause, BSD-4-clause-UC, RSA-MD, MIT-CMU, BSD-4-clause and IBM-as-is, BSD-3-clause-JANET and BSD-4-clause, BSD-3-clause-PADL and MIT-OpenVision, MIT-OpenVision, OpenLDAP, FSFULLR and MIT-CMU, BSD-4-clause and MIT-Export, BSD-2-clause and MIT-CMU, BSD-2.2-clause, FSFULLR, MIT-Export, BSD-3-clause-JANET, BSD-3-clause-PADL, IBM-as-is, OpenSSL, SSLeay
+  Source:  https://launchpad.net/ubuntu/+source/cyrus-sasl2/2.1.27+dfsg2-3ubuntu1.2
+
+libsasl2-modules-db 2.1.27+dfsg2-3ubuntu1.2
+  License: BSD-4-clause, OpenSSL and SSLeay, BSD-3-clause, GPL-3+, BSD-2-clause, BSD-4-clause-UC, RSA-MD, MIT-CMU, BSD-4-clause and IBM-as-is, BSD-3-clause-JANET and BSD-4-clause, BSD-3-clause-PADL and MIT-OpenVision, MIT-OpenVision, OpenLDAP, FSFULLR and MIT-CMU, BSD-4-clause and MIT-Export, BSD-2-clause and MIT-CMU, BSD-2.2-clause, FSFULLR, MIT-Export, BSD-3-clause-JANET, BSD-3-clause-PADL, IBM-as-is, OpenSSL, SSLeay
+  Source:  https://launchpad.net/ubuntu/+source/cyrus-sasl2/2.1.27+dfsg2-3ubuntu1.2
+
+libseccomp2 2.5.3-2ubuntu2
+  License: LGPL-2.1
+  Source:  https://launchpad.net/ubuntu/+source/libseccomp/2.5.3-2ubuntu2
+
+libselinux1 3.3-1build2
+  License: see /usr/share/doc/libselinux1/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libselinux/3.3-1build2
+
+libsemanage-common 3.3-1build2
+  License: see /usr/share/doc/libsemanage-common/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libsemanage/3.3-1build2
+
+libsemanage2 3.3-1build2
+  License: see /usr/share/doc/libsemanage2/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libsemanage/3.3-1build2
+
+libsepol2 3.3-1build1
+  License: see /usr/share/doc/libsepol2/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libsepol/3.3-1build1
+
+libsmartcols1 2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+libsqlite3-0 3.37.2-2ubuntu0.3
+  License: public-domain, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/sqlite3/3.37.2-2ubuntu0.3
+
+libss2 1.46.5-2ubuntu1.2
+  License: see /usr/share/doc/libss2/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/e2fsprogs/1.46.5-2ubuntu1.2
+
+libssl3 3.0.2-0ubuntu1.18
+  License: Apache-2.0, Artistic or GPL-1+, Artistic, GPL-1+
+  Source:  https://launchpad.net/ubuntu/+source/openssl/3.0.2-0ubuntu1.18
+
+libstdc++6 12.3.0-1ubuntu1~22.04
+  License: not recorded in the image
+  Source:  https://launchpad.net/ubuntu/+source/gcc-12/12.3.0-1ubuntu1~22.04
+
+libsystemd0 249.11-0ubuntu3.12
+  License: LGPL-2.1+, CC0-1.0, GPL-2, GPL-2 with Linux-syscall-note exception, Expat, public-domain, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/systemd/249.11-0ubuntu3.12
+
+libtasn1-6 4.18.0-4build1
+  License: see /usr/share/doc/libtasn1-6/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/libtasn1-6/4.18.0-4build1
+
+libtinfo6 6.3-2ubuntu0.1
+  License: MIT/X11, X11, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/ncurses/6.3-2ubuntu0.1
+
+libtirpc-common 1.3.2-2ubuntu0.1
+  License: BSD-3-Clause, GPL-2, __AUTO_PERMISSIVE__, BSD-2-Clause, BSD-4-Clause, LGPL-2.1+, PERMISSIVE
+  Source:  https://launchpad.net/ubuntu/+source/libtirpc/1.3.2-2ubuntu0.1
+
+libtirpc3 1.3.2-2ubuntu0.1
+  License: BSD-3-Clause, GPL-2, __AUTO_PERMISSIVE__, BSD-2-Clause, BSD-4-Clause, LGPL-2.1+, PERMISSIVE
+  Source:  https://launchpad.net/ubuntu/+source/libtirpc/1.3.2-2ubuntu0.1
+
+libudev1 249.11-0ubuntu3.12
+  License: LGPL-2.1+, CC0-1.0, GPL-2, GPL-2 with Linux-syscall-note exception, Expat, public-domain, GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/systemd/249.11-0ubuntu3.12
+
+libunistring2 1.0-1
+  License: LGPL-3+ or GPL-2+, FreeSoftware, GPL-3+ or GFDL-1.2+, GPL-3+, GPL-2+, GPL-2+ with distribution exception, MIT, LGPL-3+, GFDL-1.2+
+  Source:  https://launchpad.net/ubuntu/+source/libunistring/1.0-1
+
+libuuid1 2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+libxxhash0 0.8.1-1
+  License: BSD-2-clause, GPL-2
+  Source:  https://launchpad.net/ubuntu/+source/xxhash/0.8.1-1
+
+libzstd1 1.4.8+dfsg-3build1
+  License: BSD-3-clause and GPL-2, zlib, Expat, GPL-2, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/libzstd/1.4.8+dfsg-3build1
+
+login 1:4.8.1-2ubuntu2.2
+  License: see /usr/share/doc/login/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/shadow/1:4.8.1-2ubuntu2.2
+
+logsave 1.46.5-2ubuntu1.2
+  License: see /usr/share/doc/logsave/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/e2fsprogs/1.46.5-2ubuntu1.2
+
+lsb-base 11.1.0ubuntu4
+  License: GPL-2, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/lsb/11.1.0ubuntu4
+
+mawk 1.3.4.20200120-3
+  License: see /usr/share/doc/mawk/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/mawk/1.3.4.20200120-3
+
+mount 2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+ncurses-base 6.3-2ubuntu0.1
+  License: MIT/X11, X11, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/ncurses/6.3-2ubuntu0.1
+
+ncurses-bin 6.3-2ubuntu0.1
+  License: MIT/X11, X11, BSD-3-clause
+  Source:  https://launchpad.net/ubuntu/+source/ncurses/6.3-2ubuntu0.1
+
+openssl 3.0.2-0ubuntu1.18
+  License: not recorded in the image
+  Source:  https://launchpad.net/ubuntu/+source/openssl/3.0.2-0ubuntu1.18
+
+passwd 1:4.8.1-2ubuntu2.2
+  License: see /usr/share/doc/passwd/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/shadow/1:4.8.1-2ubuntu2.2
+
+perl-base 5.34.0-3ubuntu1.3
+  License: GPL-1+ or Artistic, Expat, REGCOMP, and GPL-1+ or Artistic, GPL-3+-WITH-BISON-EXCEPTION, Unicode, GPL-1+ or Artistic, and Unicode, BZIP, ZLIB, Artistic, GPL-2+ or Artistic, Expat or GPL-1+ or Artistic, RRA-KEEP-THIS-NOTICE, BSD-3-clause-with-weird-numbering, CC0-1.0, TEXT-TABS, GPL-1+ or Artistic, and BSD-4-clause-POWERDOG, GPL-1+ or Artistic, and BSD-3-clause-GENERIC, BSD-3-clause, SDBM-PUBLIC-DOMAIN, DONT-CHANGE-THE-GPL, GPL-1+ or Artistic or Artistic-dist, Artistic-dist, Artistic or GPL-1+ or Artistic-dist, GPL-1+ or Artistic, and Expat, LGPL-2.1, GPL-1+, GPL-2+, Artistic-2, BSD-4-clause-POWERDOG, BSD-3-clause-GENERIC, REGCOMP, HSIEH-DERIVATIVE, HSIEH-BSD
+  Source:  https://launchpad.net/ubuntu/+source/perl/5.34.0-3ubuntu1.3
+
+pinentry-curses 1.1.1-1build2
+  License: GPL-2+, GPL-2, X11, LGPL-3+ or GPL-2+, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/pinentry/1.1.1-1build2
+
+procps 2:3.3.17-6ubuntu2.1
+  License: LGPL-2.1+, LGPL-2.0+, GPL-2.0+
+  Source:  https://launchpad.net/ubuntu/+source/procps/2:3.3.17-6ubuntu2.1
+
+readline-common 8.1.2-1
+  License: see /usr/share/doc/readline-common/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/readline/8.1.2-1
+
+sed 4.8-1ubuntu2
+  License: see /usr/share/doc/sed/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/sed/4.8-1ubuntu2
+
+sensible-utils 0.0.17
+  License: GPL-2+, All-permissive, configure, installsh
+  Source:  https://launchpad.net/ubuntu/+source/sensible-utils/0.0.17
+
+sysvinit-utils 3.01-1ubuntu1
+  License: GPL-2+
+  Source:  https://launchpad.net/ubuntu/+source/sysvinit/3.01-1ubuntu1
+
+tar 1.34+dfsg-1ubuntu0.1.22.04.2
+  License: see /usr/share/doc/tar/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/tar/1.34+dfsg-1ubuntu0.1.22.04.2
+
+ubuntu-keyring 2021.03.26
+  License: see /usr/share/doc/ubuntu-keyring/copyright in the image
+  Source:  https://launchpad.net/ubuntu/+source/ubuntu-keyring/2021.03.26
+
+usrmerge 25ubuntu2
+  License: GPL v2 or later (please see /usr/share/common-licenses/GPL-2).
+  Source:  https://launchpad.net/ubuntu/+source/usrmerge/25ubuntu2
+
+util-linux 2.37.2-4ubuntu3.4
+  License: GPL-2+, GPL-2, GPL-3+, public-domain, BSD-4-clause, MIT, BSD-2-clause, BSD-3-clause, LGPL-2+, LGPL-2.1+, LGPL, LGPL-3+
+  Source:  https://launchpad.net/ubuntu/+source/util-linux/2.37.2-4ubuntu3.4
+
+zlib1g 1:1.2.11.dfsg-2ubuntu9.2
+  License: Zlib
+  Source:  https://launchpad.net/ubuntu/+source/zlib/1:1.2.11.dfsg-2ubuntu9.2
+
