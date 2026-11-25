@@ -14,6 +14,17 @@ It prints the notices for the Station node. The container images also keep their
 
 ## By release
 
+### 0.1.0-rc.34
+
+| File | What it covers |
+|---|---|
+| [station.txt](pathname:///licenses/0.1.0-rc.34/station.txt) | The Station node, including the artist dashboard |
+| [station-installer.txt](pathname:///licenses/0.1.0-rc.34/station-installer.txt) | The installer that the install command downloads |
+| [node-image-alpine-packages.txt](pathname:///licenses/0.1.0-rc.34/node-image-alpine-packages.txt) | The Alpine Linux packages in the node's container image, with a link to each one's source |
+| [ethrpc-supervisor.txt](pathname:///licenses/0.1.0-rc.34/ethrpc-supervisor.txt) | Station's supervisor in the ETH-RPC container image |
+| [eth-rpc.txt](pathname:///licenses/0.1.0-rc.34/eth-rpc.txt) | Parity's ETH-RPC program in that image, with its source release and Rust crates |
+| [eth-rpc-ubuntu-packages.txt](pathname:///licenses/0.1.0-rc.34/eth-rpc-ubuntu-packages.txt) | The Ubuntu packages in that image, with links to their source |
+
 ### 0.1.0-rc.33
 
 | File | What it covers |
