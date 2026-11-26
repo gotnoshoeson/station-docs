@@ -57,6 +57,12 @@ Choose **Edit** on an album to change it after upload:
 
 Changes show in the listener app the next time a listener's app refreshes your catalog.
 
+## Add tracks to an album
+
+Choose **Add tracks** on an album to upload more tracks to it — a bonus track, or the rest of a release whose upload didn't finish. It works like the Tracks section of [New Release](./new-release.md): pick files, set each track's title, explicit flag, featured artists and lyrics, and drag them into order. New tracks go after the album's last track.
+
+New tracks follow the album's access settings, so on a published album they go live to its listeners right away. If one upload fails, the upload stops there and shows which tracks made it and which didn't; nothing is deleted, and you can add the rest the same way.
+
 ## Disable an album
 
 Albums can't be deleted, but you can switch one off. Choose **Disable** on the album:
