@@ -50,6 +50,7 @@ On your artist page, fans can:
 
 - **Stream** your music with a full player
 - **Read the lyrics** of any track they can play, if you've added lyrics
+- See which tracks and albums you've marked **explicit** (an **E** badge) and who's **featured** on a track ("Title (feat. …)")
 - **Buy** a track or an album from your [Storefront](../features/storefront.md)
 - **Rent** an album for a set window, if you've enabled it — stream-only
 - **Join your Fan Club** by minting a [FanPin](../features/fan-club.md)
