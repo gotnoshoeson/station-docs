@@ -46,6 +46,17 @@ By default, every track inherits the album's access rules. Expand a track to giv
 
 > 📷 **Screenshot needed:** an expanded album showing the Fan Club Access editor.
 
+## Edit an album
+
+Choose **Edit** on an album to change it after upload:
+
+- **Album details** — everything on the [New Release](./new-release.md) form, and the cover (replace or remove it).
+- **Tracks** — rename a track, drag tracks into a new order, and change the explicit flag, featured artists and lyrics.
+- **Replace audio** — upload a new MP3, FLAC or WAV file (up to 100 MB) for a track. The track keeps its place, its access settings and everyone who bought it; listeners hear the new file from their next play, and fans who already downloaded it keep their copy.
+- **Earlier versions** — every audio file a track has had stays on your server, listed by upload date and file name. Choose **Use this version** to switch back. Versions aren't deleted.
+
+Changes show in the listener app the next time a listener's app refreshes your catalog.
+
 ## Disable an album
 
 Albums can't be deleted, but you can switch one off. Choose **Disable** on the album:
