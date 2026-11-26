@@ -14,6 +14,7 @@ Each album shows its cover, title, year, and track count, along with status badg
 
 - **Published** — the album has access rules set and is discoverable by listeners.
 - **Staged** — no access rules yet, so it isn't discoverable. Setting access (below) flips it to Published.
+- **Disabled** — you've switched the album off (see [Disable an album](#disable-an-album)). Nobody can hear it until you enable it again.
 - **Price badge** — if the album is sold as an on-chain product, its price shows here.
 - **No purchase path** (orange warning) — the album has no way for listeners to buy it. Fix it on your [Storefront](./storefront.md): set a per-album price, or set a universal track price.
 
@@ -44,6 +45,17 @@ Every album needs at least one access path — either a public release date, or 
 By default, every track inherits the album's access rules. Expand a track to give it its own — a per-track override **fully replaces** the album settings for that track (handy for a single or a bonus cut). To revert to inheritance, remove the track's groups, turn off its public release, and save.
 
 > 📷 **Screenshot needed:** an expanded album showing the Fan Club Access editor.
+
+## Disable an album
+
+Albums can't be deleted, but you can switch one off. Choose **Disable** on the album:
+
+- The album disappears from the listener app, and **nobody can play or download it** — not the public, not your fan club, and not fans who bought or are renting it. Before it switches off, you're told how many buyers and renters will lose access.
+- **Nothing is deleted.** Its tracks, files, access settings and prices stay on your server, and your sales history and income statement keep every sale.
+- Choose **Enable** to bring it back exactly as it was. Everyone who had access gets it back.
+- Nothing changes on the blockchain. A rental keeps counting down while the album is off, and a fan's library shows it as **Unavailable right now** until you enable it.
+
+You can still edit a disabled album and its access settings.
 
 ## Related
 

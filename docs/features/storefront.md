@@ -39,6 +39,7 @@ Set a price **per album**; each album becomes its own on-chain product.
 - Albums start at **No price set**. Enter a price and choose **Set Price** to publish the album as a purchasable product.
 - Priced albums can be **edited**, and **activated / deactivated** to control whether they're currently for sale.
 - A badge shows how many of your albums have prices set.
+- [Disabled](./catalog.md#disable-an-album) albums stay in this list with a **Disabled** badge, and you can still change their prices.
 
 Nothing to price yet? Upload music in [New Release](./new-release.md) — albums appear here automatically.
 

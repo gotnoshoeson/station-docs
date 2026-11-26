@@ -54,7 +54,7 @@ On your artist page, fans can:
 - **Join your Fan Club** by minting a [FanPin](../features/fan-club.md)
 - **Enjoy Fan Club benefits** you're able to give your patrons special access to releases in your [Catalog](../features/catalog.md)
 - **Download** anything they've bought
-- **Follow you and save albums**, kept in their own browser
+- **Follow you and save albums**, kept in their own browser. If an album in their library can't be reached — because you've [disabled it](../features/catalog.md#disable-an-album) or your server is offline — it shows as **Unavailable right now** until it's back.
 
 ## When a fan needs a wallet
 
