@@ -56,6 +56,8 @@ Once your album has a title and at least one track, click **Create Release**. St
 
 Remember: it starts **closed** until you set its access.
 
+If a track fails to upload, Station stops there and shows which tracks made it and which didn't. The album is kept (still closed), nothing is deleted, and you finish it from your [Catalog](./catalog.md) with **Add tracks**. If only the cover fails, the tracks still upload, and you can add the cover later with **Edit**.
+
 > 📷 **Screenshot needed:** the Tracks section with a few tracks added.
 
 ## Related
