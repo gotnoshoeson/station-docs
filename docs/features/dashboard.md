@@ -22,7 +22,7 @@ The first time you open the dashboard on a new server, you're asked to **choose 
 
 Two cards summarize your catalog:
 
-- **Total Albums** — how many albums you've published
+- **Total Albums** — how many albums are in your catalog, including Staged and Disabled ones
 - **Total Tracks** — total tracks across all albums
 
 Manage these in [Catalog](./catalog.md), and add more through [New Release](./new-release.md).
@@ -40,7 +40,7 @@ A wallet indicator in the top-right shows whether your crypto wallet is connecte
 Once you've set up a [Fan Club](./fan-club.md) or [Storefront](./storefront.md), the Dashboard adds an on-chain finance view:
 
 - **Revenue overview** — income totaled across your Fan Club and Storefront.
-- **Transaction log** — a chronological feed of on-chain activity. Each entry shows the date, the type (Fan Club donation, sale, rental, or withdrawal), the amount and token, the fan or buyer's wallet, and a link to view it on the block explorer. Summary cards break out Fan Club income, Storefront income, and total transaction count, and you can filter the feed by type.
+- **Transaction log** — a chronological feed of on-chain activity. Each entry shows the date, the type (Fan Club donation, album sale, track sale, or rental), the amount and token, the fan or buyer's wallet, and a link to view it on the block explorer. Summary cards break out Fan Club income, Storefront income, and total transaction count, and you can filter the feed by type: Fan Club, Album sales, Track sales, or Rentals.
 - **Export income statement (CSV)** — download your transactions as a CSV for your own records. Export everything, or narrow it to a single stream (for example Fan Club income or product sales) using the type filter.
 
 :::note
