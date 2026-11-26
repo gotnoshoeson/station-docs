@@ -18,7 +18,7 @@ Your public identity on the network.
   - If another node already holds the name you want, you'll be told, and you can pick a different one. (Your display name is separate and always stays yours.)
 - **Artist Avatar** — upload a profile image (up to 5 MB), or remove it.
 - **Bio** — tell fans about yourself.
-- **Social Links** — website, Twitter, and Instagram URLs.
+- **Website** — a link to your own site.
 
 Choose **Save Profile** to save your details and claim your namespace.
 
@@ -71,6 +71,10 @@ A status box shows which node ETH-RPC is reading from. If a node stops answering
   docker compose up -d station
   ```
   Your data and settings are preserved through the update.
+
+## Change Password
+
+Enter your current password and a new one (at least 8 characters), then confirm it. When the password changes, every other browser signed in to your dashboard is signed out; the one you're using stays signed in.
 
 ## Fan Access
 
