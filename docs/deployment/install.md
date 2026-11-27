@@ -68,7 +68,7 @@ If the ports are held by an earlier Station install, you won't see this question
 
 ### Email for HTTPS notices
 
-Optional. Let's Encrypt writes here only if your certificate's automatic renewal fails.
+Optional. Let's Encrypt writes here only if your certificate's automatic renewal fails. Your HTTPS certificate comes from Let's Encrypt, under its [Subscriber Agreement](https://letsencrypt.org/repository/).
 
 ### Joining the network
 

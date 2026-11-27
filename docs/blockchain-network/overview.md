@@ -14,7 +14,7 @@ This is why Station exists.
 
 Minimal extraction here isn't a value we hold or a promise we're asking you to take on faith. It's a **cryptographic law**. The share Station takes is written into the contracts you deploy and own — not a policy in a document we can revise, not a number in a database we control. It's math, and it's yours.
 
-In the beginning, the split is **0% | 100%** — nothing to Station, everything to you. Early adopters lock that rate in for good. Artists who arrive later get whatever the split is on the day they deploy, and keep that. [Revenue Split](./revenue-split.md) covers how it's enforced.
+In the beginning, the split is **1% | 99%**: 1% to Station, 99% to you. Early adopters lock that rate in for good. Artists who arrive later get whatever the split is on the day they deploy, and keep that. [Revenue Split](./revenue-split.md) covers how it's enforced.
 
 Everything below is what that buys you — plus the three things you need before any of it works: a **wallet**, the **network** it talks to, and some **tokens** to pay for transactions.
 
@@ -25,7 +25,7 @@ The same way running your own server means nobody can deplatform your music, run
 - **You hold the keys.** Your revenue is paid to an address only you control. There's no account to suspend and no support queue to wait in.
 - **No approval needed.** No application, no underwriting, no merchant account. Deploy a contract and you can take payment from anyone, anywhere, immediately.
 - **No chargebacks.** Settled payments are final. Nobody can claw back a sale months later.
-- **No percentage cut.** Station's split starts at **0% | 100%** — you keep everything — and it's locked into your contract the day you deploy, so it can't be raised on you later. See [Revenue Split](./revenue-split.md).
+- **A 1% cut, locked in.** Station's split starts at **1% | 99%**, and it's locked into your contract the day you deploy, so it can't be raised on you later. See [Revenue Split](./revenue-split.md).
 - **Open by default.** Every transaction is publicly verifiable on a block explorer — including the ones paying you.
 
 ## Transaction costs

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Revenue Split
 
-Station takes a share of what you earn. In the beginning, that share is **0% | 100%** — nothing to Station, everything to you.
+Station takes a share of what you earn. In the beginning, that share is **1% | 99%**: 1% to Station, 99% to you.
 
 This page covers why taking as little as possible is the goal, the mechanism that makes it real, and what we can and can't tell you about where it goes from here.
 
@@ -40,17 +40,17 @@ We'd rather not ask you to trust us. The point of putting the split in your cont
 It's also why the whole ecosystem runs on blockchain payment rails rather than a conventional processor. Legacy payment providers can move money, but they can't hold a rule. There's nowhere in a bank or a card processor to write *this share can never be raised* and have it bind anyone — you'd be back to a promise and a company's word for it. Programmable rails aren't an aesthetic choice here. They're the only reason the guarantee can exist at all.
 :::
 
-## In the beginning: 0% | 100%
+## In the beginning: 1% | 99%
 
-The first artists on Station keep **100% of their revenue**. Station's share is nothing.
+The first artists on Station keep **99% of their revenue**. Station's share is 1%, the smallest split the contracts can hold: the payment splitter needs a share on both sides.
 
-This isn't a promotional rate or a free trial that converts later. There's no introductory period and no expiry date. A contract deployed at 0% | 100% stays at 0% | 100% for as long as it exists. If you deploy in this round and Station's split is 5% | 95% in three years, yours is still 0% | 100%.
+This isn't a promotional rate or a free trial that converts later. There's no introductory period and no expiry date. A contract deployed at 1% | 99% stays at 1% | 99% for as long as it exists. If you deploy in this round and Station's split is 5% | 95% in three years, yours is still 1% | 99%.
 
 ## What changes will look like
 
 There is **no schedule** for rate changes. We're not going to pretend we have one.
 
-What we can tell you is the shape of it. The first increase will be **1% | 99%** — 99% of revenue to artists. Increases after that will follow the same pattern: small, incremental, and applied only to contracts deployed after the change.
+What we can tell you is the shape of it: increases will be small, incremental, and applied only to contracts deployed after the change.
 
 Every increase does the same thing — it raises the rate for new deployments and leaves every existing contract untouched.
 
@@ -60,7 +60,7 @@ This falls out of the design rather than being bolted on, and it's the fairest v
 
 Deploying on Station today means betting on young software, a small network, and a project still working out its own economics. That's a real risk, and it's not one later artists will take — by the time they arrive, the thing will be proven, the network will be bigger, and the ground will be more solid. They'll pay a slightly higher rate for that certainty.
 
-The rule is the same for everyone: whatever the split is on the day you deploy is the split you keep, permanently. Artists joining at 1% | 99% hold 1% | 99% even after the rate has moved past them, exactly as you hold 0% | 100%. Nobody's rate follows the network up.
+The rule is the same for everyone: whatever the split is on the day you deploy is the split you keep, permanently. Artists who join at a later, higher rate hold that rate even after it has moved past them, exactly as you hold 1% | 99%. Nobody's rate follows the network up.
 
 So you're taking the risk, and you keep the better rate. Not as a reward we hand out, but as a consequence of when your contract was deployed and what was written into it that day.
 
@@ -70,9 +70,9 @@ So you're taking the risk, and you keep the better rate. Not as a reward we hand
 
 Your contracts are deployed as **beacon proxies**: your proxy holds your state, and its logic comes from an implementation contract named by a beacon.
 
-During launch, Station owns that beacon, so implementation bugs found early can be patched for contracts that are already deployed rather than leaving artists stranded on broken code. It's a short transitional window, not a permanent feature of the protocol.
+During launch, Station owns that beacon, so implementation bugs found early can be patched for contracts that are already deployed rather than leaving artists stranded on broken code. We mean it as a transitional window, not a permanent feature of the protocol.
 
-Once the contracts have proven themselves, beacon ownership will be transferred to the zero address. At that point no one owns it and no one can upgrade any of these contracts again — not Station, not anyone who might come after Station.
+Once the contracts have proven themselves, we plan to transfer beacon ownership to the zero address. It's a plan, not a commitment with a date: the [Terms of Service](/legal/terms) (§ 9.3) describe the upgrade authority as it stands. At that point no one owns it and no one can upgrade any of these contracts again — not Station, not anyone who might come after Station.
 
 Renouncing the beacon is a public transaction, so you don't have to take our word for when it lands. You can check the beacon's owner yourself on [Blockscout](https://blockscout-testnet.polkadot.io).
 

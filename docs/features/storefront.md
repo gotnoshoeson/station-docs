@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Storefront
 
-Your Storefront is where you **sell your music** — individual tracks, whole albums, and time-limited album rentals. It runs on an on-chain **Station Shop** smart contract that you deploy once. Every purchase flows through that contract, which splits each payment between you and Station — **0% | 100%** in this first round, meaning you keep all of it — and your earnings collect in the contract until you withdraw them. See [Revenue Split](../blockchain-network/revenue-split.md).
+Your Storefront is where you **sell your music** — individual tracks, whole albums, and time-limited album rentals. It runs on an on-chain **Station Shop** smart contract that you deploy once. Every purchase flows through that contract, which splits each payment between you and Station — **1% | 99%** in this first round, meaning you keep 99% — and your earnings collect in the contract until you withdraw them. See [Revenue Split](../blockchain-network/revenue-split.md).
 
 > 📷 **Screenshot needed:** the Storefront page.
 

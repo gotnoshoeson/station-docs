@@ -98,6 +98,23 @@ const config: Config = {
           ],
         },
         {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Terms of Service',
+              to: '/legal/terms',
+            },
+            {
+              label: 'Privacy Policy',
+              to: '/legal/privacy',
+            },
+            {
+              label: 'Licenses',
+              to: '/licenses',
+            },
+          ],
+        },
+        {
           title: 'Resources',
           items: [
             {

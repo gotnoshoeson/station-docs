@@ -62,6 +62,17 @@ const sidebars: SidebarsConfig = {
       ],
     },
     'licenses',
+    {
+      type: 'category',
+      label: 'Legal',
+      items: [
+        'legal/terms',
+        'legal/privacy',
+        'legal/acceptable-use',
+        'legal/copyright',
+        'legal/software-license',
+      ],
+    },
   ],
 };
 
