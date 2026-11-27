@@ -46,6 +46,19 @@ docker compose -f docker-compose.yml logs station | grep -oE '[0-9]{3}-[0-9]{3}'
 
 Then enter it at `https://your-domain.com/setup`.
 
+## Reset your dashboard login
+
+If you've lost your dashboard password, reset the login from the server. Your music, sales and settings stay as they are; only the login is replaced.
+
+```bash
+docker compose -f docker-compose.yml stop station
+docker compose -f docker-compose.yml run --rm --no-deps station station reset-auth --data-dir /data
+docker compose -f docker-compose.yml start station
+docker compose -f docker-compose.yml logs station | grep -oE '[0-9]{3}-[0-9]{3}' | tail -1
+```
+
+The node has to be stopped first: the reset can't open its data while the node is running. The last line prints the setup PIN the node creates when it starts again. Enter it at `https://your-domain.com/setup` and create a new login.
+
 ## Updates
 
 Station checks for a new version every 6 hours. By default it only tells you: the news appears in **Settings → Software Updates** in your dashboard, and nothing changes on your server until you act.
